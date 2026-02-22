@@ -1,0 +1,16 @@
+\providecommand{\newblock}{}
+\begin{thebibliography}{1}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{{\tt #1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\eprint}[2][]{\url{#2}}
+% Bibliography created with iopart-num v2.1
+% /biblio/bibtex/contrib/iopart-num
+
+\bibitem{SM}
+See Supplemental Material at \href{https://www.titech.ac.jp/}{url} for details of derivations.
+
+\bibitem{Kalinikos_Slavin_1986}
+Kalinikos B~A and Slavin A~N 1986 {\em J. Phys. C: Solid State Phys.\/} {\bf 19} 7013
+
+\end{thebibliography}

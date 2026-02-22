@@ -1,0 +1,92 @@
+\documentclass[12pt]{iopart}
+\usepackage{iopams}
+\usepackage{bm}
+\usepackage{hyperref}
+
+
+\begin{document}
+\title[Magnetoelastic wave in Ferromagnetic Thin-film Mediated by Dipolar Interaction]{Magnetoelastic wave in Ferromagnetic Thin-film Mediated by Dipolar Interaction}
+
+\author{Hiroki Yoshida$^1$}
+
+\address{$^1$ Department of Physics, Institute of Science Tokyo, Japan}
+\ead{yoshida.h.9d8d@m.isct.ac.jp}
+
+\begin{abstract}
+    Here comes the abstract ($\leq 200$ words)
+\end{abstract}
+
+% \keywords{Universe}
+\submitto{\APEX}
+\maketitle
+\ioptwocol
+
+
+Hello, world. Main text ($\leq 3200$ words and $\leq 5$ figures, incl. the  Title, Abstract, Main Text, Acknowledgements, References, Tables and figure captions.).
+
+We start from the basic equations describing the magnetic dipolar interaction: Maxwell's equations. When the elastic deformation is present, the lattice deviates from its equilibrium positions $\bm{r}$ to $\bm{R}:=\bm{r}+\bm{u}(\bm{r},t)$, where $\bm{u}(\bm{r},t)$ is the displacement field. Then, the Maxwell's equations are rewritten in terms of this new coordinate as
+\begin{equation}
+    \nabla_{\bm{R}}\cdot \left(\bm{H}+\bm{M}\right)=0,\qquad
+    \nabla_{\bm{R}}\times \bm{H}\approx 0,\label{eq:Maxwell_R}
+\end{equation}
+where in the second equation, the magnetostatic approximation is applied. This approximation is justified when the length scale is long enough so that the dipolar interaction is dominant. We decompose the magnetic field $\bm{H}$ and the magnetization $\bm{M}$ as $\bm{H}=\bm{H}_0+\bm{h}(\bm{r},t)$ and $\bm{M}=\bm{M}_0+\bm{m}(\bm{r},t)$, respectively. Here, $\bm{H}_0$ and $\bm{M}_0$ are quantities at the equilibrium under in-plane external magnetic field and parallel to each other. We consider a wave that is a propagation of small deviations from equilibrium. Assuming that the wave propagaets in the direction parallel to the $x$ axis at frequency $\omega$ and the film is uniform in the $y$ direction, we have $\bm{h}=\bm{h}(z)e^{i(kx-\omega t)}$ and $\bm{m}=\bm{m}(z)e^{i(kx-\omega t)}$. We rewrite Eq.~(\ref{eq:Maxwell_R}) in terms of these quantities in the original coordinate $\bm{r}$. We note that we need to pay attention to the conservation of the magnetization in a unit volume and as a result we get $\bm{M}(\bm{R})=\bm{M}(\bm{r})/\det(J(\bm{r}))$, where $J(\bm{r})$ is a Jacobi matrix (see Supplemental Material~\cite{SM} for detail). We get
+\begin{equation}
+    \nabla_{\bm{r}}\cdot\left(\bm{h}(\bm{r})+\bm{m}(\bm{r})\right)=\bm{M}_0\cdot\nabla_{\bm{r}}\left(\nabla_{\bm{r}}\cdot\bm{u}(\bm{r})\right),\label{eq:Maxwell_couple_div}
+\end{equation}
+\begin{equation}
+    \nabla_{\bm{r}}\times\bm{h}(\bm{r})=0,\label{eq:Maxwell_couple_rot}
+\end{equation}
+where $\nabla_{\bm{r}}$ stands for derivatives with respect to the coordinate $\bm{r}$. Because the surface of the film is also distorted as in Fig.~, boundary conditions to solvve these equations are also modified by the existence of $\bm{u}$ as
+\begin{equation}
+    h^{\mathrm{in}}_x-h_x^{\mathrm{out}}=M_{0,z}\frac{\partial u_z}{\partial x},\label{eq:Maxwell_bc_x}
+\end{equation}
+\begin{equation}
+    h^{\mathrm{in}}_z+m_z-h^{\mathrm{out}}_z=M_{0,x}\frac{\partial u_z}{\partial x},\label{eq:Maxwell_bc_z}
+\end{equation}
+at $z=\pm L/2$, where $h^{\mathrm{in}/\mathrm{out}}$ stand for the dipolar fields inside and outside of the film, respectively. Following the Green tensor method as in Ref.~\cite{Kalinikos_Slavin_1986}, the dipolar field satisfying Eqs.~(\ref{eq:Maxwell_couple_div}) and (\ref{eq:Maxwell_couple_rot}) under boundary conditions (\ref{eq:Maxwell_bc_x}) and (\ref{eq:Maxwell_bc_z}) is given as (see Seupplemental Material~\cite{SM} for the detail)
+\begin{equation}
+    \bm{h}(z)=\int_{-\frac{L}{2}}^{\frac{L}{2}}\rmd z'\left(G^m(z,z')\bm{m}(z')+G^u(z,z')\bm{u}(z')\right),\label{eq:dipolar_field}
+\end{equation}
+where
+\begin{equation}
+    G^m(z,z')=\left(\begin{array}{ccc}
+        -G_P(z,z')&0&-iG_Q(z,z')\\
+        0&0&0\\
+        -iG_Q(z,z')&0&G_{P'}(z,z')
+    \end{array}\right),
+\end{equation}
+\begin{equation*}
+    G^u(z,z')=\left(\begin{array}{c}
+        ikM_{0,x}G_P(z,z')-kM_{0,z}G_Q(z,z')\\
+        0\\
+        -kM_{0,x}G_Q(z,z')-ikM_{0,z}G_{P'}(z,z')
+    \end{array}\right.\nonumber
+\end{equation*}
+\begin{equation}
+    \left.\begin{array}{cc}
+        0&-kM_{0,x}G_Q(z,z')-ikM_{0,z}G_{P'}(z,z')\\
+        0&0\\
+        0&-ikM_{0,x}G_{P'}(z,z')+kM_{0,z}G_{Q'}(z,z')
+    \end{array}\right),
+\end{equation}
+\begin{equation}
+    G_{P}(z,z')=\frac{k}{2}e^{-k|z-z'|},
+\end{equation}
+\begin{equation}
+    G_{Q}(z,z')=\mathrm{sgn}(z-z')G_{P}(z,z'),
+\end{equation}
+\begin{equation}
+    G_{P'}(z,z')=G_{P}(z,z')-\delta(z-z'),
+\end{equation}
+\begin{equation}
+    G_{Q'}(z,z')=G_{Q}(z,z')-\frac{1}{k}\frac{\partial}{\partial z'}\delta(z-z').
+\end{equation}
+This dipolar field couples the magnetostatic wave and elastic wave on the film. We note that in the current setup, there are no couplings when the equilibrium magnetization is parallel to the $y$ axis, i.e. the external magnetic field is applied in that direction. Otherwise, two waves are coupled via $\bm{h}$.
+
+
+\ack{H. Y. Acknowledges support from Japan Society for the Promotion of Science (JSPS) KAKENHI Grant No. JP24KJ1109 and by MEXT Initiative to Establish Next-generation Novel Integrated Circuits Centers (X-NICS) Grant No. JPJ011438. S. M. acknowledges support by Japan Society for the Promotion of Science (JSPS) KAKENHI Grant No. JP22K18687, No. JP22H00108, and No. JP24H02231.}
+
+\bibliographystyle{iopart-num.bst}
+\bibliography{Ref_MSEW.bib}
+
+\end{document}
