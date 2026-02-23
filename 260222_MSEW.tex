@@ -1,11 +1,14 @@
-\documentclass[12pt]{iopart}
+% journal:APEX
+% author:Hiroki Yoshida
+\documentclass[10pt]{iopart}
 \usepackage{iopams}
 \usepackage{bm}
 \usepackage{hyperref}
 
 
 \begin{document}
-\title[Magnetoelastic wave in Ferromagnetic Thin-film Mediated by Dipolar Interaction]{Magnetoelastic wave in Ferromagnetic Thin-film Mediated by Dipolar Interaction}
+\title{Magnetoelastic wave in Ferromagnetic Thin-film Mediated by Dipolar Interaction}
+% \article{\APEX}{Magnetoelastic wave in Ferromagnetic Thin-film Mediated by Dipolar Interaction}
 
 \author{Hiroki Yoshida$^1$}
 
@@ -20,7 +23,6 @@
 \submitto{\APEX}
 \maketitle
 \ioptwocol
-
 
 Hello, world. Main text ($\leq 3200$ words and $\leq 5$ figures, incl. the  Title, Abstract, Main Text, Acknowledgements, References, Tables and figure captions.).
 
@@ -63,7 +65,7 @@ where
     \end{array}\right.\nonumber
 \end{equation*}
 \begin{equation}
-    \left.\begin{array}{cc}
+    \quad\left.\begin{array}{cc}
         0&-kM_{0,x}G_Q(z,z')-ikM_{0,z}G_{P'}(z,z')\\
         0&0\\
         0&-ikM_{0,x}G_{P'}(z,z')+kM_{0,z}G_{Q'}(z,z')
@@ -82,6 +84,40 @@ where
     G_{Q'}(z,z')=G_{Q}(z,z')-\frac{1}{k}\frac{\partial}{\partial z'}\delta(z-z').
 \end{equation}
 This dipolar field couples the magnetostatic wave and elastic wave on the film. We note that in the current setup, there are no couplings when the equilibrium magnetization is parallel to the $y$ axis, i.e. the external magnetic field is applied in that direction. Otherwise, two waves are coupled via $\bm{h}$.
+
+Next, we examine the effect of the magnetoelastic coupling in the dynamics of the magnetostatic and elastic waves. In the absence of the coupling, the dynamics of magnetization $\bm{m}$ upto its first-order is described by the linearized Landau--Lifshitz equation
+\begin{equation}
+    \dot{\bm{m}}=-\gamma\left(\bm{m}\times\bm{H}_0+\bm{M}_0\times\bm{h}\right),\label{eq:LandauLifshitz}
+\end{equation}
+where $\gamma$ is the gyromagnetic ratio. This equation can be derived from a Lagrangian
+\begin{equation*}
+    L^m[\bm{m},\dot{\bm{m}},\bm{m}^*,\dot{\bm{m}}^*]=\int\rmd z\Re\left[\frac{\mu_0}{4M_0^2\gamma}\bm{M}_0\cdot(\bm{m}\times\dot{\bm{m}}^*)\right.
+\end{equation*}
+\begin{equation}
+    \hspace{2.9cm}\left.-\frac{\mu_0}{4}\left(\bm{h}^*\cdot\bm{h}+\frac{H_0}{M_0}\bm{m}^*\cdot\bm{m}\right)\right].\label{eq:Lagrangian_m}
+\end{equation}
+We can check it by constructing the Euler--Lagrange equation with respect to $\bm{m}^*$ from this Lagrangian. Here, $\mu_0$ is the vacuum magnetic permeability, which is required to make it consistent with the energy of the magnetic field. On the other hand, the dynamics of the displacement field $\bm{u}$ is described by the Navier--Cauchy equation
+\begin{equation}
+    \rho\ddot{\bm{u}}=\mu\nabla^2\bm{u}+\left(\mu+\lambda\right)\nabla\left(\nabla\cdot\bm{u}\right),\label{eq:NavierCauchy}
+\end{equation}
+where $\rho$ is the mass density, $\mu$ and $\lambda$ are Lam\'e constants. The Lagrangian for this equation is
+\begin{equation}
+    L^u[\bm{u},\dot{\bm{u}},\bm{u}^*,\dot{\bm{u}}^*]=\int\rmd z\left[\frac{\rho}{4}\dot{\bm{u}}^*\cdot\dot{\bm{u}}+\frac{1}{4}\partial_i\sigma_{ij}u_j^*\right],\label{eq:Lagrangian_u}
+\end{equation}
+where $\sigma_{ij}=\mu(\partial_{i}u_j+\partial_ju_i)+\lambda\delta_{ij}\nabla\cdot\bm{u}$ is the stress tensor. The total Lagrangian of a coupled system is given by the sum of two Lagrangians~(\ref{eq:Lagrangian_m}) and (\ref{eq:Lagrangian_u}). In this case, $\bm{h}$ is no longer just a functional of the amgnetization, but also a functional of the displacement field $\bm{u}$. Therefore, there appear a new volume force term $-\mu_0\bm{f}$ in the Navier--Cauchy equation~(\ref{eq:NavierCauchy}), where the force $\bm{f}$ is given as (see Supplemental Material~\cite{SM} for the detail of derivation)
+\begin{equation}
+    f_i(z):=\frac{\delta h^*_j}{\delta u^*_i}h_j=-(\bm{M}_0\cdot\nabla)h_i(z).
+\end{equation}
+Physically, this force can be understood as a Maxwell stress acting on magnetic dipoles at each lattice site caused by the change of the dipolar field, which is induced by the displacement field. The coupled dynamics of the magnetoelastic wave is then given by
+\begin{equation}
+    \left\{
+    \begin{array}{l}
+        \dot{\bm{m}}=-\gamma\left(\bm{m}\times\bm{H}_0+\bm{M}_0\times\bm{h}\right)\\
+        \rho\ddot{\bm{u}}=\mu\nabla^2\bm{u}+\left(\mu+\lambda\right)\nabla\left(\nabla\cdot\bm{u}\right)-\mu_0\bm{f}.
+    \end{array}
+    \right.
+\end{equation}
+
 
 
 \ack{H. Y. Acknowledges support from Japan Society for the Promotion of Science (JSPS) KAKENHI Grant No. JP24KJ1109 and by MEXT Initiative to Establish Next-generation Novel Integrated Circuits Centers (X-NICS) Grant No. JPJ011438. S. M. acknowledges support by Japan Society for the Promotion of Science (JSPS) KAKENHI Grant No. JP22K18687, No. JP22H00108, and No. JP24H02231.}
