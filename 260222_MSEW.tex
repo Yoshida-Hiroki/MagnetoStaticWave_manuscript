@@ -1,6 +1,7 @@
 % journal:APEX
 % author:Hiroki Yoshida
 \documentclass[10pt]{iopart}
+\usepackage{graphicx}
 \usepackage{iopams}
 \usepackage{bm}
 \usepackage{hyperref}
@@ -26,7 +27,15 @@
 
 Hello, world. Main text ($\leq 3200$ words and $\leq 5$ figures, incl. the  Title, Abstract, Main Text, Acknowledgements, References, Tables and figure captions.).
 
-Our system is schematically shown in Fig.~. Consider a ferromagnetic thin film, that is infinitely large in the $xy$ plane and has a finite thickness $L$ in the $z$ direction. The origin is taken to be in the middle of the film. This film is assumed to be isotropic both magnetically and elastically. We apply an in-plane external magnetic field $\bm{H}_0$ to this system. Then, at equilibrium, saturation magnetization $\bm{M}_0$ appear parallel to $\bm{H}_0$. We study the propagation wave of small deviation from equilibrium magnetization $\bm{m}(\bm{r},t)$. This system also has another propagating wave of elastic deformation. At each position $\bm{r}$, the lattice points are shifted by $\bm{u}(\bm{r},t)$. By this deformation, the distance between magnetic dipoles at each lattice point is modulated and the dipole field $\bm{h}(\bm{r},t)$ created by $\bm{m}$ is also affected by $\bm{u}$ and the system shows the elastomagnetic wave propagation. For simplicity, we consider planewaves with frequency $\omega$ and take the $x$ axis parallel to its propagation direction and assume that the system is uniform in the $y$ direction. Then, $\bm{m}$ and $\bm{u}$ can be written as
+\begin{figure}
+    \begin{center}
+        \includegraphics[width=\columnwidth]{fig/Schematic_MSEW.pdf}
+        \caption{Schematic illustration of the system under consideration. Ferromagnetic thin-film of thickness $L$ in the $z$ direction and infinitely large in $x$ and $y$ directions. Magnetic moments at each lattice point precess around an axis parallel to the external in-plane magnetic field $\bm{H}_0$. The elastic wave changes positions of magnetic moments and their distance, resulting in the modification of dipolar interaction among them.}
+        \label{fig:Schametic}
+    \end{center}
+\end{figure}
+
+Our system is schematically shown in Fig.~\ref{fig:Schametic}. Consider a ferromagnetic thin film, that is infinitely large in the $xy$ plane and has a finite thickness $L$ in the $z$ direction. The origin is taken to be in the middle of the film. This film is assumed to be isotropic both magnetically and elastically. We apply an in-plane external magnetic field $\bm{H}_0$ to this system. Then, at equilibrium, saturation magnetization $\bm{M}_0$ appear parallel to $\bm{H}_0$. We study the propagation wave of small deviation from equilibrium magnetization $\bm{m}(\bm{r},t)$. This system also has another propagating wave of elastic deformation. At each position $\bm{r}$, the lattice points are shifted by $\bm{u}(\bm{r},t)$. By this deformation, the distance between magnetic dipoles at each lattice point is modulated and the dipole field $\bm{h}(\bm{r},t)$ created by $\bm{m}$ is also affected by $\bm{u}$ and the system shows the elastomagnetic wave propagation. For simplicity, we consider planewaves with frequency $\omega$ and take the $x$ axis parallel to its propagation direction and assume that the system is uniform in the $y$ direction. Then, $\bm{m}$ and $\bm{u}$ can be written as
 \begin{equation}
     \bm{m}(\bm{r},t)=\bm{m}(z)e^{i(kx-\omega t)},\\
     \bm{u}(\bm{r},t)=\bm{u}(z)e^{i(kx-\omega t)}.\label{eq:Assumption}
