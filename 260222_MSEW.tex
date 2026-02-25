@@ -74,19 +74,8 @@ where
     \end{array}\right),
 \end{equation}
 \begin{equation*}
-    G^u(z,z')=\left(\begin{array}{c}
-        ikM_{0,x}G_P(z,z')-kM_{0,z}G_Q(z,z')\\
-        0\\
-        -kM_{0,x}G_Q(z,z')-ikM_{0,z}G_{P'}(z,z')
-    \end{array}\right.\nonumber
+    G^u(z,z')=-ikM_{0,x}G^m(z,z'),\nonumber
 \end{equation*}
-\begin{equation}
-    \quad\left.\begin{array}{cc}
-        0&-kM_{0,x}G_Q(z,z')-ikM_{0,z}G_{P'}(z,z')\\
-        0&0\\
-        0&-ikM_{0,x}G_{P'}(z,z')+kM_{0,z}G_{Q'}(z,z')
-    \end{array}\right),
-\end{equation}
 \begin{equation}
     G_{P}(z,z')=\frac{k}{2}e^{-k|z-z'|},
 \end{equation}
@@ -94,10 +83,7 @@ where
     G_{Q}(z,z')=\mathrm{sgn}(z-z')G_{P}(z,z'),
 \end{equation}
 \begin{equation}
-    G_{P'}(z,z')=G_{P}(z,z')-\delta(z-z'),
-\end{equation}
-\begin{equation}
-    G_{Q'}(z,z')=G_{Q}(z,z')-\frac{1}{k}\frac{\partial}{\partial z'}\delta(z-z').
+    G_{P'}(z,z')=G_{P}(z,z')-\delta(z-z').
 \end{equation}
 This dipolar field couples the magnetostatic wave and elastic wave on the film. We note that in the current setup, there are no couplings when the equilibrium magnetization is parallel to the $y$ axis, i.e. the external magnetic field is applied in that direction. Otherwise, two waves are coupled via $\bm{h}$.
 
@@ -130,9 +116,15 @@ Physically, this force can be understood as a Maxwell stress acting on magnetic 
     \begin{array}{l}
         \dot{\bm{m}}=-\gamma\left(\bm{m}\times\bm{H}_0+\bm{M}_0\times\bm{h}\right)\\
         \rho\ddot{\bm{u}}=\mu\nabla^2\bm{u}+\left(\mu+\lambda\right)\nabla\left(\nabla\cdot\bm{u}\right)-\mu_0\bm{f}.
-    \end{array}
+    \end{array}\label{eq:CoupledEOM}
     \right.
 \end{equation}
+
+In order to see the dynamical property of the coupled wave described by the above equations of motion, we numerically calculate the dispersion relation below. By the assumption~(\ref{eq:Assumption}), the time derivative in the left-hand side becomes $-i\omega$. The second equation of Eq.~\ref{eq:CoupledEOM} contains spatial derivative of $\bm{u}$ and requires the boundary condition to solve this equation. Since we consider a film in vacuum, we impose the tension free condition at the surfaces $z=\pm L/2$ as
+\begin{equation}
+    \sigma_{xz}|_{z=\pm\frac{L}{2}}=\sigma_{yz}|_{z=\pm\frac{L}{2}}=\sigma_{zz}|_{z=\pm\frac{L}{2}}=0.
+\end{equation}
+Under this condition, a type of elastic wave called Lamb wave appear when the coupling is absent. Since the system is symmetric with respect to the $z=0$ plane, modes of the Lamb wave are either symmetric or anti-symmetric with respect to the sign change of the variable $z$. The magnetostatic wave in this geometry is studied in detail by Damon and Eshbach~\cite{damonMagnetostaticModesFerromagnet1961}. They analytically showed that when the external magnetic field is parallel to the propagation of the wave ($\bm{H}_0\parallel\bm{k}$), the system has infinitely many bulk mode called backward volume wave, which are either symmetric or anti-symmetric. When the magnetic field is in-plane but perpendicular to the propagation ($\bm{H}_0\perp\bm{k}$), there will be a surface mode, which is localized at the surface. For the calculation of the dispersion, it is more convenient to introduce another coordinate $(r_1,r_2,r_3)$, where the original $(x,y,z)$ is rotated around the $z$ axis and $r_1$ axis is taken to be parallel to the external magnetic field. Then, $r_1$ component of $\bm{m}$ is zero since $\bm{M}_0\cdot\dot{\bm{m}}=0$ in the first equation of Eq.~(\ref{eq:CoupledEOM}) and the equation is reduced to an equation about two-component vector $(m_2,m_3)^T$.
 
 
 

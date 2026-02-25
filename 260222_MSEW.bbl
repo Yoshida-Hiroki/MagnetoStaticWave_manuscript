@@ -11,6 +11,9 @@
 See Supplemental Material at \href{https://www.titech.ac.jp/}{url} for details of derivations.
 
 \bibitem{Kalinikos_Slavin_1986}
-Kalinikos B~A and Slavin A~N 1986 {\em J. Phys. C: Solid State Phys.\/} {\bf 19} 7013
+Kalinikos B~A and Slavin A~N 1986 {\em J. Phys. C: Solid State Phys.\/} {\bf 19} 7013 \urlprefix\url{https://doi.org/10.1088/0022-3719/19/35/014}
+
+\bibitem{damonMagnetostaticModesFerromagnet1961}
+Damon R~W and Eshbach J~R 1961 {\em Journal of Physics and Chemistry of Solids\/} {\bf 19} 308--320 \urlprefix\url{https://www.sciencedirect.com/science/article/pii/0022369761900415}
 
 \end{thebibliography}
