@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.5.19)  4 MAR 2026 17:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.5.19)  4 MAR 2026 17:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -243,10 +243,6 @@ Underfull \hbox (badness 1354) in paragraph at lines 24--26
 [1
 
 {c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 2035) in paragraph at lines 33--34
-\OT1/cmr/m/n/10 Acknowledgements, References, Tables and figure
- []
-
 <fig/Schematic_MSEW.pdf, id=19, 568.83519pt x 396.01451pt>
 File: fig/Schematic_MSEW.pdf Graphic file (type pdf)
 <use fig/Schematic_MSEW.pdf>
@@ -275,14 +271,15 @@ Underfull \hbox (badness 2790) in paragraph at lines 128--129
 []\OT1/cmr/m/n/10 In order to see the dynamical property of
  []
 
-<fig/Bands.pdf, id=322, 1438.61464pt x 356.91443pt>
+
+
+[3]
+<fig/Bands.pdf, id=343, 1438.61464pt x 356.91443pt>
 File: fig/Bands.pdf Graphic file (type pdf)
 <use fig/Bands.pdf>
 Package pdftex.def Info: fig/Bands.pdf  used on input line 136.
 (pdftex.def)             Requested size: 473.36871pt x 117.43901pt.
 
-
-[3]
 
 (./260222_MSEW.bbl
 Underfull \hbox (badness 5274) in paragraph at lines 17--18
@@ -301,27 +298,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
 )
 
-[4 <./fig/Bands.pdf>] (./260222_MSEW.aux)
+[4]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5 <./fig/Bands.pdf>] (./260222_MSEW.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-04-29>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `260222_MSEW.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 9581 strings out of 469590
- 142864 string characters out of 5474519
- 559762 words of memory out of 5000000
+ 9582 strings out of 469590
+ 142870 string characters out of 5474519
+ 556762 words of memory out of 5000000
  36280 multiletter control sequences out of 15000+600000
  638345 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,10n,79p,2614b,496s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on 260222_MSEW.pdf (4 pages, 5809325 bytes).
+Output written on 260222_MSEW.pdf (5 pages, 5809885 bytes).
 PDF statistics:
- 511 PDF objects out of 1000 (max. 8388607)
- 307 compressed objects within 4 object streams
- 31 named destinations out of 1000 (max. 500000)
+ 515 PDF objects out of 1000 (max. 8388607)
+ 310 compressed objects within 4 object streams
+ 32 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
