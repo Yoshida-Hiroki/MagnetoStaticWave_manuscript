@@ -1,11 +1,23 @@
 \providecommand{\newblock}{}
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
 \expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
 \providecommand{\eprint}[2][]{\url{#2}}
 % Bibliography created with iopart-num v2.1
 % /biblio/bibtex/contrib/iopart-num
+
+\bibitem{Kittel_PR}
+Kittel C 1958 {\em Phys. Rev.\/} {\bf 110} 836--841 \urlprefix\url{https://link.aps.org/doi/10.1103/PhysRev.110.836}
+
+\bibitem{LL_EDinCM}
+Landau L~D and Lifshitz E~M 1984 {\em {Electrodynamics of Continuous Media}\/} (Pergamon, Oxford)
+
+\bibitem{Kittel_Abraham_RMP}
+Kittel C and Abrahams E 1953 {\em Rev. Mod. Phys.\/} {\bf 25} 233--238 \urlprefix\url{https://link.aps.org/doi/10.1103/RevModPhys.25.233}
+
+\bibitem{Flebus_magnonPolaron}
+Flebus B, Shen K, Kikkawa T, Uchida K~i, Qiu Z, Saitoh E, Duine R~A and Bauer G~E~W 2017 {\em Phys. Rev. B\/} {\bf 95} 144420 \urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevB.95.144420}
 
 \bibitem{Yamamoto_Maekawa_AnnPhys}
 Yamamoto K and Maekawa S 2023 {\em Ann. Phys. (Berlin)\/} {\bf 536} 2300395 \urlprefix\url{https://onlinelibrary.wiley.com/doi/abs/10.1002/andp.202300395}
