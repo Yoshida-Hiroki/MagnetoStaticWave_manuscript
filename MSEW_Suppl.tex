@@ -71,7 +71,7 @@ First, Maxwell's equations in the coordinate $\bm{R}$ are
     \nabla_{\bm{R}}\cdot(\bm{H}_{\mathrm{in}}(\bm{R},t)+\bm{M}(\bm{R},t))&=0,\\
     \nabla_{\bm{R}}\times\bm{H}_{\mathrm{in}}(\bm{R},t)&\approx0,
 \ee
-where \(\nabla_{\bm{R}}\) is a derivative with respect to \(\bm{R}\). We go back to the coordinate \(\bm{r}\) from these equations. Here we need to pay attention to the conservation of the magnetization~\cite{Yamamoto_Maekawa_AnnPhys}:
+where \(\nabla_{\bm{R}}\) is a derivative with respect to \(\bm{R}\). We rewrite these equations in terms of coordinate $\bm{r}$. Here we need to pay attention to the conservation of the magnetization~\cite{Yamamoto_Maekawa_AnnPhys}:
 \be
     \int_{V_R}\rmd^3R\,\bm{M}(\bm{R},t)&=\int_{V_r}\rmd^3r\, \bm{M}(\bm{r},t)\nonumber\\
     \Rightarrow \int_{V_r}\rmd^3r\,(\det J)\bm{M}(\bm{R}(\bm{r}),t)&=\int_{V_r}\rmd^3r\, \bm{M}(\bm{r},t)\qquad \forall V_r.\nonumber\\
@@ -167,7 +167,7 @@ where the first term is the same as in Ref.~\cite{Kalinikos_Slavin_1986} and
 
 Here we calculate the force induced by the magnetoelastic coupling.
 
-The Euler--Lagrange equation about $u^*_i$ gives
+The Euler--Lagrange equation for $u^*_i$ gives
 \be
     \int \rmd z\Re\left[\rho\ddot{u}_i-\left(-\mu_0\frac{\delta h_a^*}{\delta u_i^*}h_a+\partial_i\sigma_{ij}\right)\right]=0\label{eq:Formal_NC},
 \ee
