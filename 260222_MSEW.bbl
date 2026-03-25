@@ -25,17 +25,35 @@ Mazalan M~B, Noor A~M, Wahab Y, Yahud S and Zaman W~S~W~K 2022 {\em Micromachine
 \bibitem{Kunstle2025}
 K{\"u}nstle K, Kunz Y, Moussa T, Lasinger K, Yamamoto K, Pirro P, Gregg J~F, Kamra A and Weiler M 2025 {\em Nat. Commun.\/} {\bf 16} 10116 \urlprefix\url{https://doi.org/10.1038/s41467-025-66301-x}
 
+\bibitem{Walker1957}
+Walker L~R 1957 {\em Phys. Rev.\/} {\bf 105} 390 \urlprefix\url{https://doi.org/10.1103/PhysRev.105.390}
+
+\bibitem{damoneshbachMagnetostaticModesFerromagnet1961}
+Damon R~W and Eshbach J~R 1961 {\em Journal of Physics and Chemistry of Solids\/} {\bf 19} 308--320 \urlprefix\url{https://www.sciencedirect.com/science/article/pii/0022369761900415}
+
+\bibitem{damonPropagationMagnetostaticSpin}
+Damon R~W and Van De~Vaart H {\em J. Appl. Phys.\/} {\bf 36} 3453 \urlprefix\url{https://pubs.aip.org/aip/jap/article/36/11/3453/950345/Propagation-of-Magnetostatic-Spin-Waves-at}
+
+\bibitem{Rayleigh1885}
+{Lord Rayleigh} 1885 {\em Proc. Lond. Math. Soc.\/} {\bf 17} 4 \urlprefix\url{https://doi.org/10.1112/plms/s1-17.1.4}
+
+\bibitem{Rayleigh1889}
+{Lord Rayleigh} 1889 {\em Proc. Lond. Math. Soc.\/} {\bf 20} 225 \urlprefix\url{https://doi.org/10.1112/plms/s1-20.1.225}
+
+\bibitem{Lamb1889}
+Lamb H 1889 {\em Proc. Lond. Math. Soc.\/} {\bf 21} 70 \urlprefix\url{https://doi.org/10.1112/plms/s1-21.1.70}
+
+\bibitem{lambWavesElasticPlate1917}
+Lamb H 1917  {\bf 93} 114--128 \urlprefix\url{https://doi.org/10.1098/rspa.1917.0008}
+
+\bibitem{Kalinikos_Slavin_1986}
+Kalinikos B~A and Slavin A~N 1986 {\em J. Phys. C: Solid State Phys.\/} {\bf 19} 7013 \urlprefix\url{https://doi.org/10.1088/0022-3719/19/35/014}
+
 \bibitem{Yamamoto_Maekawa_AnnPhys}
 Yamamoto K and Maekawa S 2023 {\em Ann. Phys. (Berlin)\/} {\bf 536} 2300395 \urlprefix\url{https://onlinelibrary.wiley.com/doi/abs/10.1002/andp.202300395}
 
 \bibitem{SM}
 See Supplementary data at \href{https://www.titech.ac.jp/}{url} for details of calculations of the Jacobi matrix, the dipolar field, and the force.
-
-\bibitem{Kalinikos_Slavin_1986}
-Kalinikos B~A and Slavin A~N 1986 {\em J. Phys. C: Solid State Phys.\/} {\bf 19} 7013 \urlprefix\url{https://doi.org/10.1088/0022-3719/19/35/014}
-
-\bibitem{damonMagnetostaticModesFerromagnet1961}
-Damon R~W and Eshbach J~R 1961 {\em Journal of Physics and Chemistry of Solids\/} {\bf 19} 308--320 \urlprefix\url{https://www.sciencedirect.com/science/article/pii/0022369761900415}
 
 \bibitem{clarkElasticConstantsSingleCrystal1961}
 Clark A~E and Strakna R~E 1961 {\em J. Appl. Phys.\/} {\bf 32} 1172--1173 \urlprefix\url{https://doi.org/10.1063/1.1736184}
