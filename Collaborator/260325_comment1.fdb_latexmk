@@ -1,0 +1,25 @@
+# Fdb version 4
+["dvipdf"] 1774422541.77044 "260325_comment1.dvi" "260325_comment1.pdf" "260325_comment1" 1774422542.5824 0
+  "260325_comment1.dvi" 1774422541 7188 00daafa2eee73a7f1f0f0f56d4f26d8a "latex"
+  (generated)
+  "260325_comment1.pdf"
+  (rewritten before read)
+["latex"] 1774422541.17322 "d:/github/MagnetoStaticWave_manuscript/Collaborator/260325_comment1.tex" "260325_comment1.dvi" "260325_comment1" 1774422542.5818 0
+  "260325_comment1.aux" 1774422541 32 044b7f8fc9779af7531264e0c5c84b6d "latex"
+  "260325_comment1.tex" 1774422536 4938 ce4a1cf18b1c754a0b759a0bf9f9eb2b ""
+  "c:/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1715788364 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1715787650 1292 21c1c5bfeaebccffdb478fd231a0997d ""
+  "c:/texlive/2024/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisr-h.tfm" 1715791303 812 52bd92aa20c58a398601cda6dd62c8d1 ""
+  "c:/texlive/2024/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisr-v.tfm" 1715791303 536 5f2475e9deb198c23894800d3c5eed00 ""
+  "c:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-dvips.def" 1715789064 35454 e6342481ed7341e30cc5da18666b16fa ""
+  "c:/texlive/2024/texmf-dist/tex/platex/jsclasses/jsarticle.cls" 1715788895 61387 1c16fa09f9aa344f6b7ed4a7e2c399b2 ""
+  "c:/texlive/2024/texmf-dist/tex/platex/jsclasses/jslogo.sty" 1715788895 5585 8e4615c54073c390d14154b29cee89cb ""
+  "c:/texlive/2024/texmf-dist/web2c/texmf.cnf" 1715786847 41983 7ec6bfd6bf34339a61f0f08f42298e60 ""
+  "c:/texlive/2024/texmf-var/web2c/euptex/uplatex.fmt" 1715791768 8159311 e8969f26da054ac335e806a3378e04ed ""
+  "c:/texlive/2024/texmf.cnf" 1715791585 713 e69b156964470283e0530f5060668171 ""
+  "d:/github/MagnetoStaticWave_manuscript/Collaborator/260325_comment1.tex" 1774422536 4938 ce4a1cf18b1c754a0b759a0bf9f9eb2b ""
+  (generated)
+  "260325_comment1.aux"
+  "260325_comment1.dvi"
+  "260325_comment1.log"
+  (rewritten before read)
