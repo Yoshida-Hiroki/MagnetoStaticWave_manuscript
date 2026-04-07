@@ -1,2 +1,25 @@
-Referee list
+Mikhail Cherkasskii
+RWTH Achen
+(Silvia V. Kusminskiyのポスドク。spin wave関連の論文多)
+
+Marios Kounalakis
+TU Delft
+(2602.20458 Magnetoelastic conversion in integrated YIG nanostructures の著者の一人。ポスドク?)
+
+Zhengyi Li
+Nanjing Normal University
+(2511.16433 Observation of Magnetostatic Surface Spin Wave Solitons in Yttrium Iron Garnet Thin Filmの著者。ポスドク)
+
+Alessandro Vindigni
+ETH
+(dipole-dipole interaction関連の仕事がいくつか。講師? e.g. 2405.02898 On the spontaneous magnetization of two-dimensional ferromagnets)
+
+Weichao Yu
+Fudan University
+(SpinMechanics9のinvited speakerの中で若手そうなので。)
+
+Akashdeep Kamra
+RPTU Kaiserslautern-Landau
+(教授。magnon-phonon。同上)
+
 
