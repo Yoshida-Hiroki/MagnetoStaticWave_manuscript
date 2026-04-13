@@ -1,0 +1,79 @@
+\providecommand{\newblock}{}
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{{\tt #1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\eprint}[2][]{\url{#2}}
+% Bibliography created with iopart-num v2.1
+% /biblio/bibtex/contrib/iopart-num
+
+\bibitem{Kittel_PR}
+Kittel C 1958 {\em Phys. Rev.\/} {\bf 110} 836--841 \urlprefix\url{https://link.aps.org/doi/10.1103/PhysRev.110.836}
+
+\bibitem{LL_EDinCM}
+Landau L~D and Lifshitz E~M 1984 {\em {Electrodynamics of Continuous Media}\/} (Pergamon, Oxford)
+
+\bibitem{Kittel_Abraham_RMP}
+Kittel C and Abrahams E 1953 {\em Rev. Mod. Phys.\/} {\bf 25} 233--238 \urlprefix\url{https://link.aps.org/doi/10.1103/RevModPhys.25.233}
+
+\bibitem{Flebus_magnonPolaron}
+Flebus B, Shen K, Kikkawa T, Uchida K~i, Qiu Z, Saitoh E, Duine R~A and Bauer G~E~W 2017 {\em Phys. Rev. B\/} {\bf 95} 144420 \urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevB.95.144420}
+
+\bibitem{IDT_review}
+Mazalan M~B, Noor A~M, Wahab Y, Yahud S and Zaman W~S~W~K 2022 {\em Micromachines\/} {\bf 13} 30 \urlprefix\url{https://www.mdpi.com/2072-666X/13/1/30}
+
+\bibitem{Kunstle2025}
+K{\"u}nstle K, Kunz Y, Moussa T, Lasinger K, Yamamoto K, Pirro P, Gregg J~F, Kamra A and Weiler M 2025 {\em Nat. Commun.\/} {\bf 16} 10116 \urlprefix\url{https://doi.org/10.1038/s41467-025-66301-x}
+
+\bibitem{Walker1957}
+Walker L~R 1957 {\em Phys. Rev.\/} {\bf 105} 390 \urlprefix\url{https://doi.org/10.1103/PhysRev.105.390}
+
+\bibitem{damoneshbachMagnetostaticModesFerromagnet1961}
+Damon R~W and Eshbach J~R 1961 {\em Journal of Physics and Chemistry of Solids\/} {\bf 19} 308--320 \urlprefix\url{https://www.sciencedirect.com/science/article/pii/0022369761900415}
+
+\bibitem{damonPropagationMagnetostaticSpin}
+Damon R~W and Van De~Vaart H 1965 {\em J. Appl. Phys.\/} {\bf 36} 3453 \urlprefix\url{https://pubs.aip.org/aip/jap/article/36/11/3453/950345/Propagation-of-Magnetostatic-Spin-Waves-at}
+
+\bibitem{Rayleigh1885}
+{Lord Rayleigh} 1885 {\em Proc. Lond. Math. Soc.\/} {\bf 17} 4 \urlprefix\url{https://doi.org/10.1112/plms/s1-17.1.4}
+
+\bibitem{Rayleigh1889}
+{Lord Rayleigh} 1889 {\em Proc. Lond. Math. Soc.\/} {\bf 20} 225 \urlprefix\url{https://doi.org/10.1112/plms/s1-20.1.225}
+
+\bibitem{Lamb1889}
+Lamb H 1889 {\em Proc. Lond. Math. Soc.\/} {\bf 21} 70 \urlprefix\url{https://doi.org/10.1112/plms/s1-21.1.70}
+
+\bibitem{lambWavesElasticPlate1917}
+Lamb H 1917 {\em Proc. A\/} {\bf 93} 114--128 \urlprefix\url{https://doi.org/10.1098/rspa.1917.0008}
+
+\bibitem{Kalinikos_Slavin_1986}
+Kalinikos B~A and Slavin A~N 1986 {\em J. Phys. C: Solid State Phys.\/} {\bf 19} 7013 \urlprefix\url{https://doi.org/10.1088/0022-3719/19/35/014}
+
+\bibitem{Stancil_TheoryofMagnetostaticWaves}
+Stancil D~D 1993 {\em {Theory of Magnetostatic Waves}\/} (Springer, New York, NY)
+
+\bibitem{Yamamoto_Maekawa_AnnPhys}
+Yamamoto K and Maekawa S 2023 {\em Ann. Phys. (Berlin)\/} {\bf 536} 2300395 \urlprefix\url{https://onlinelibrary.wiley.com/doi/abs/10.1002/andp.202300395}
+
+\bibitem{SM}
+See Supplementary data at \href{https://www.titech.ac.jp/}{url} for details of calculations of the Jacobian matrix, the dipolar field, and the force.
+
+\bibitem{clarkElasticConstantsSingleCrystal1961}
+Clark A~E and Strakna R~E 1961 {\em J. Appl. Phys.\/} {\bf 32} 1172--1173 \urlprefix\url{https://doi.org/10.1063/1.1736184}
+
+\bibitem{AulockHandbookofferritematerials}
+von Aulock W~H (ed) 1965 {\em Handbook of microwave ferrite materials\/} (Academic Press)
+
+\bibitem{YIGalpha_PRAppl}
+Kunz Y, Sch\"uler J, Ryburn F, K\"unstle K, Schneider M, Lasinger K, Zhang Y, Pirro P, Gregg J and Weiler M 2025 {\em Phys. Rev. Appl.\/} {\bf 24}(1) 014043 \urlprefix\url{https://link.aps.org/doi/10.1103/97kd-ysh6}
+
+\bibitem{rodriguezClassicalQuantumDistinctions2016}
+Rodriguez S~R~K 2016 {\em Eur. J. Phys.\/} {\bf 37} 025802 \urlprefix\url{https://doi.org/10.1088/0143-0807/37/2/025802}
+
+\bibitem{Hioki2022}
+Hioki T, Hashimoto Y and Saitoh E 2022 {\em Commun. Phys.\/} {\bf 5} 115 \urlprefix\url{https://doi.org/10.1038/s42005-022-00888-1}
+
+\bibitem{Krysztofik2021}
+Krysztofik A, {\"O}zo{\u{g}}lu S, McMichael R~D and Coy E 2021 {\em Sci. Rep.\/} {\bf 11} 14011 \urlprefix\url{https://doi.org/10.1038/s41598-021-93308-3}
+
+\end{thebibliography}

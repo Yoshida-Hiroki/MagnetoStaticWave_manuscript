@@ -1,14 +1,98 @@
 % journal:APEX
+%DIF LATEXDIFF DIFFERENCE FILE
+%DIF DEL 260222_MSEW_v3.tex   Fri Apr  3 20:15:30 2026
+%DIF ADD 260222_MSEW_v4.tex   Mon Apr 13 19:24:01 2026
 % author:Hiroki Yoshida
 \documentclass[10pt]{iopart}
 \usepackage{graphicx}
 \usepackage{iopams}
 \usepackage{bm}
 \usepackage{hyperref}
-
+%DIF PREAMBLE EXTENSION ADDED BY LATEXDIFF
+%DIF UNDERLINE PREAMBLE %DIF PREAMBLE
+\RequirePackage[normalem]{ulem} %DIF PREAMBLE
+\RequirePackage{color}\definecolor{RED}{rgb}{1,0,0}\definecolor{BLUE}{rgb}{0,0,1} %DIF PREAMBLE
+\providecommand{\DIFaddtex}[1]{{\protect\color{blue}\uwave{#1}}} %DIF PREAMBLE
+\providecommand{\DIFdeltex}[1]{{\protect\color{red}\sout{#1}}}                      %DIF PREAMBLE
+%DIF SAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddbegin}{} %DIF PREAMBLE
+\providecommand{\DIFaddend}{} %DIF PREAMBLE
+\providecommand{\DIFdelbegin}{} %DIF PREAMBLE
+\providecommand{\DIFdelend}{} %DIF PREAMBLE
+\providecommand{\DIFmodbegin}{} %DIF PREAMBLE
+\providecommand{\DIFmodend}{} %DIF PREAMBLE
+%DIF FLOATSAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddFL}[1]{\DIFadd{#1}} %DIF PREAMBLE
+\providecommand{\DIFdelFL}[1]{\DIFdel{#1}} %DIF PREAMBLE
+\providecommand{\DIFaddbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFaddendFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelendFL}{} %DIF PREAMBLE
+%DIF HYPERREF PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFadd}[1]{\texorpdfstring{\DIFaddtex{#1}}{#1}} %DIF PREAMBLE
+\providecommand{\DIFdel}[1]{\texorpdfstring{\DIFdeltex{#1}}{}} %DIF PREAMBLE
+\newcommand{\DIFscaledelfig}{0.5}
+%DIF HIGHLIGHTGRAPHICS PREAMBLE %DIF PREAMBLE
+\RequirePackage{settobox} %DIF PREAMBLE
+\RequirePackage{letltxmacro} %DIF PREAMBLE
+\newsavebox{\DIFdelgraphicsbox} %DIF PREAMBLE
+\newlength{\DIFdelgraphicswidth} %DIF PREAMBLE
+\newlength{\DIFdelgraphicsheight} %DIF PREAMBLE
+% store original definition of \includegraphics %DIF PREAMBLE
+\LetLtxMacro{\DIFOincludegraphics}{\includegraphics} %DIF PREAMBLE
+\newcommand{\DIFaddincludegraphics}[2][]{{\color{blue}\fbox{\DIFOincludegraphics[#1]{#2}}}} %DIF PREAMBLE
+\newcommand{\DIFdelincludegraphics}[2][]{% %DIF PREAMBLE
+\sbox{\DIFdelgraphicsbox}{\DIFOincludegraphics[#1]{#2}}% %DIF PREAMBLE
+\settoboxwidth{\DIFdelgraphicswidth}{\DIFdelgraphicsbox} %DIF PREAMBLE
+\settoboxtotalheight{\DIFdelgraphicsheight}{\DIFdelgraphicsbox} %DIF PREAMBLE
+\scalebox{\DIFscaledelfig}{% %DIF PREAMBLE
+\parbox[b]{\DIFdelgraphicswidth}{\usebox{\DIFdelgraphicsbox}\\[-\baselineskip] \rule{\DIFdelgraphicswidth}{0em}}\llap{\resizebox{\DIFdelgraphicswidth}{\DIFdelgraphicsheight}{% %DIF PREAMBLE
+\setlength{\unitlength}{\DIFdelgraphicswidth}% %DIF PREAMBLE
+\begin{picture}(1,1)% %DIF PREAMBLE
+\thicklines\linethickness{2pt} %DIF PREAMBLE
+{\color[rgb]{1,0,0}\put(0,0){\framebox(1,1){}}}% %DIF PREAMBLE
+{\color[rgb]{1,0,0}\put(0,0){\line( 1,1){1}}}% %DIF PREAMBLE
+{\color[rgb]{1,0,0}\put(0,1){\line(1,-1){1}}}% %DIF PREAMBLE
+\end{picture}% %DIF PREAMBLE
+}\hspace*{3pt}}} %DIF PREAMBLE
+} %DIF PREAMBLE
+\LetLtxMacro{\DIFOaddbegin}{\DIFaddbegin} %DIF PREAMBLE
+\LetLtxMacro{\DIFOaddend}{\DIFaddend} %DIF PREAMBLE
+\LetLtxMacro{\DIFOdelbegin}{\DIFdelbegin} %DIF PREAMBLE
+\LetLtxMacro{\DIFOdelend}{\DIFdelend} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFaddbegin}{\DIFOaddbegin \let\includegraphics\DIFaddincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFaddend}{\DIFOaddend \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFdelbegin}{\DIFOdelbegin \let\includegraphics\DIFdelincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFdelend}{\DIFOaddend \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+\LetLtxMacro{\DIFOaddbeginFL}{\DIFaddbeginFL} %DIF PREAMBLE
+\LetLtxMacro{\DIFOaddendFL}{\DIFaddendFL} %DIF PREAMBLE
+\LetLtxMacro{\DIFOdelbeginFL}{\DIFdelbeginFL} %DIF PREAMBLE
+\LetLtxMacro{\DIFOdelendFL}{\DIFdelendFL} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFaddbeginFL}{\DIFOaddbeginFL \let\includegraphics\DIFaddincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFaddendFL}{\DIFOaddendFL \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFdelbeginFL}{\DIFOdelbeginFL \let\includegraphics\DIFdelincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFdelendFL}{\DIFOaddendFL \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+%DIF COLORLISTINGS PREAMBLE %DIF PREAMBLE
+\RequirePackage{listings} %DIF PREAMBLE
+\RequirePackage{color} %DIF PREAMBLE
+\lstdefinelanguage{DIFcode}{ %DIF PREAMBLE
+%DIF DIFCODE_UNDERLINE %DIF PREAMBLE
+  moredelim=[il][\color{red}\sout]{\%DIF\ <\ }, %DIF PREAMBLE
+  moredelim=[il][\color{blue}\uwave]{\%DIF\ >\ } %DIF PREAMBLE
+} %DIF PREAMBLE
+\lstdefinestyle{DIFverbatimstyle}{ %DIF PREAMBLE
+	language=DIFcode, %DIF PREAMBLE
+	basicstyle=\ttfamily, %DIF PREAMBLE
+	columns=fullflexible, %DIF PREAMBLE
+	keepspaces=true %DIF PREAMBLE
+} %DIF PREAMBLE
+\lstnewenvironment{DIFverbatim}{\lstset{style=DIFverbatimstyle}}{} %DIF PREAMBLE
+\lstnewenvironment{DIFverbatim*}{\lstset{style=DIFverbatimstyle,showspaces=true}}{} %DIF PREAMBLE
+%DIF END PREAMBLE EXTENSION ADDED BY LATEXDIFF
 
 \begin{document}
-\title{Magnetoelastic Waves in Ferromagnetic Thin Films Mediated by Dipolar Interactions}
+\title{Magnetoelastic \DIFdelbegin \DIFdel{wave }\DIFdelend \DIFaddbegin \DIFadd{Waves }\DIFaddend in Ferromagnetic \DIFdelbegin \DIFdel{Thin-film }\DIFdelend \DIFaddbegin \DIFadd{Thin Films }\DIFaddend Mediated by Dipolar \DIFdelbegin \DIFdel{Interaction}\DIFdelend \DIFaddbegin \DIFadd{Interactions}\DIFaddend }
+%DIF <  \article{\APEX}{Magnetoelastic wave in Ferromagnetic Thin-film Mediated by Dipolar Interaction}
 
 \author{Hiroki Yoshida$^1$, Ryohei Kono$^1$, Manato Fujimoto$^2$, Motoki Asano$^3$, Daiki Hatanaka$^3$, Kei Yamamoto$^{4,5}$, Shuichi Murakami$^{2,5,6}$}
 \address{$^1$ Department of Physics, Institute of Science Tokyo, 2-12-1 Ookayama, Meguro-ku, Tokyo 152-8551, Japan}
@@ -21,9 +105,10 @@
 
 
 \begin{abstract}
-    Magnetoelastic coupling mediated by magnetic dipolar interactions is theoretically investigated in ferromagnetic thin films under an in-plane magnetic field. We develop a theoretical description that incorporates dipolar fields derived from Maxwell's equations in the presence of elastic deformations. The resulting coupled equations of motion predict hybridization between magnetostatic and Lamb waves. Numerical calculations for a yttrium iron garnet (YIG) film reveal anti-crossings in the dispersion relations, with hybridization gaps ranging from $0.1$ to several MHz.
+    Magnetoelastic coupling mediated by magnetic dipolar \DIFdelbegin \DIFdel{interaction }\DIFdelend \DIFaddbegin \DIFadd{interactions }\DIFaddend is theoretically investigated in \DIFdelbegin \DIFdel{a ferromagnetic thin film }\DIFdelend \DIFaddbegin \DIFadd{ferromagnetic thin films }\DIFaddend under an in-plane magnetic field. We develop a theoretical description that incorporates dipolar fields derived from Maxwell's equations in the presence of elastic deformations. The resulting coupled equations of motion predict hybridization between magnetostatic and Lamb waves. Numerical calculations for a yttrium iron garnet (YIG) film reveal anti-crossings in the dispersion relations, with hybridization gaps ranging from $0.1$ to several MHz.
 \end{abstract}
 
+%DIF <  \keywords{Universe}
 \submitto{\APEX}
 \maketitle
 \ioptwocol
@@ -140,7 +225,7 @@ In order to examine the dynamical properties of the coupled waves described by t
 \begin{equation}
     \sigma_{xz}|_{z=\pm\frac{L}{2}}=\sigma_{yz}|_{z=\pm\frac{L}{2}}=\sigma_{zz}|_{z=\pm\frac{L}{2}}=0.\label{eq:BC_EW}
 \end{equation}
-Without the coupling, it is known that a type of elastic wave called a Lamb wave appears under these conditions. Since the system in equilibrium is symmetric with respect to the $z=0$ plane, the Lamb wave modes are either even or odd in $z$. For later convenience, we introduce the $C_{2x}$ symmetry operation. The system is invariant under $C_{2x}$, and the deformation vector $\bm{u}(z)$ is an eigenfunction of the corresponding operator: $C_{2x}\bm{u}(z)=\pm\bm{u}(z)$. Numerically, we need to solve the equations under the boundary conditions~(\ref{eq:BC_EW}). For example, the finite element method naturally incorporates these conditions.
+Without the coupling, it is known that a type of elastic wave called a Lamb wave appears under these conditions. Since the system in equilibrium is symmetric with respect to the $z=0$ plane, the Lamb wave modes are either even or odd in $z$. For later convenience, we introduce the $C_{2x}$ symmetry operation. The system is invariant under $C_{2x}$, and the deformation vector $\bm{u}(z)$ is an eigenfunction of the corresponding operator: $C_{2x}\bm{u}(z)=\pm\bm{u}(z)$. \DIFdelbegin \DIFdel{The eigenvalues $\pm 1$ correspond to mirror-symmetric and antisymmetric Lamb modes, respectively. }\DIFdelend Numerically, we need to solve the equations under the boundary conditions~(\ref{eq:BC_EW}). For example, the finite element method naturally incorporates these conditions.
 
 On the other hand, the magnetostatic waves without the coupling to elastic waves in this geometry were studied in detail by Damon and Eshbach~\cite{damoneshbachMagnetostaticModesFerromagnet1961}. They analytically showed that when the external magnetic field is parallel to the propagation direction of the wave ($\bm{H}_0\parallel\bm{k}$), the system has infinitely many bulk modes called backward volume waves (BVWs). When the magnetic field is in-plane but perpendicular to the propagation direction ($\bm{H}_0\perp\bm{k}$), a surface mode appears that is localized at one of the surfaces.
 
@@ -148,20 +233,23 @@ For the calculation of the dispersion, it is convenient to introduce another coo
 
 Now we consider the coupled equations~(\ref{eq:CoupledEOM}). Using the finite element method, we discretize the equations in real space while satisfying the boundary conditions, which leads to a generalized eigenvalue problem for the eigenvalue $\omega$. By solving this problem, we obtain the dispersion curves shown in Fig.~\ref{fig:Bands}. The parameters are taken to be those of Yttrium-Iron-Garnet (YIG): $\rho=5.17\ \mathrm{g}/\mathrm{cm}^3$, $\mu=7.81\times10^{-8}\ \mathrm{kg}\cdot\mathrm{GHz}^2/\mathrm{m}$, $\lambda=10.94\times10^{-8}\ \mathrm{kg}\cdot\mathrm{GHz}^2/\mathrm{m}$~\cite{clarkElasticConstantsSingleCrystal1961}, $\gamma=29.8\ \mathrm{GHz}/\mathrm{T}$, and $\mu_0M_0=0.178$ T~\cite{AulockHandbookofferritematerials}. The vacuum permeability is $\mu_0=4\pi\times10^{11}\ \mathrm{T}^2\mathrm{m}/(\mathrm{kg}\cdot\mathrm{GHz}^2)$. We set the film thickness to $L=500$ nm and the external magnetic field to $\mu_0H_0=0.1$ T.
 
-We define the angle between the $x$ axis and the external magnetic field as $\varphi$ and write $\bm{H}_0=H_0(\cos\varphi,\sin\varphi,0)$. In Fig.~\ref{fig:Bands}(a), we plot the case $\varphi=0$. In this case, the system has a $C_{2x}$ rotation symmetry and thus, the modes of magnetostatic BVWs and Lamb waves can be labeled by their eigenvalues. States with $C_{2x}$ eigenvalue $-1$ are plotted as blue curves, while those with $+1$ as red curves. Curves with negative slopes are magnetostatic BVWs and positive ones are Lamb waves, respectively. The markers represent the dispersion of the coupled waves. The insets show magnified views of the band crossings between BVWs and Lamb waves. We observe that the magnetostatic and elastic waves cause anti-crossing and produce hybridization gaps of several MHz only when the two modes have the same $C_{2x}$ eigenvalues. Figure~\ref{fig:Bands}(b) shows the case $\varphi=\pi/4$. In this case, two types of magnetostatic modes coexist: BVWs and surface waves. The insets show magnified views of the band crossings between the magnetostatic and Lamb waves. Hybridization gaps at anti-crossings appear between all the modes as the system does not have any symmetries in this case. Finally, in Fig.~\ref{fig:Bands}(c), we plot the case $\varphi=\pi/2$. Here, a magnetostatic surface mode appears but does not couple to the Lamb waves. This is because $G^u=0,\bm{f}=\bm{0}$, so that Eq.~(\ref{eq:CoupledEOM}) reduces to two independent equations. The decoupling arises from the mirror symmetry with respect to the plane normal to the $y$ axis, under which the magnetostatic and Lamb waves are odd and even, respectively. This symmetry argument does not constrain the coupling to deformations along the $y$ direction. Nevertheless, Maxwell's equations~(\ref{eq:Maxwell_couple_div}) and (\ref{eq:Maxwell_couple_rot}) do not involve $u_y$ within the magnetostatic approximation and to linear order in $\bm{m}$ and $\bm{u}$. Therefore, in the present theory, magnetostatic and elastic waves are completely decoupled when $\varphi=\pi/2$.
+We define the angle between the $x$ axis and the external magnetic field as $\varphi$ and write $\bm{H}_0=H_0(\cos\varphi,\sin\varphi,0)$. In Fig.~\ref{fig:Bands}(a), we plot the case $\varphi=0$. In this case, the system has a $C_{2x}$ rotation symmetry and thus, the modes of magnetostatic BVWs and Lamb waves can be labeled by their eigenvalues. States with $C_{2x}$ eigenvalue $-1$ are plotted as blue curves, while those with $+1$ as red curves. Curves with negative slopes are magnetostatic BVWs and positive ones are Lamb waves, respectively. The markers represent the dispersion of the coupled waves. The insets show magnified views of the band crossings between BVWs and Lamb waves. We observe that the magnetostatic and elastic waves cause anti-crossing and produce hybridization gaps of several MHz only when the two modes have the same $C_{2x}$ eigenvalues. Figure~\ref{fig:Bands}(b) shows the case $\varphi=\pi/4$. In this case, two types of magnetostatic modes coexist: BVWs and surface waves. The insets show magnified views of the band crossings between the magnetostatic and Lamb waves. Hybridization gaps at anti-crossings appear between all the modes as the system does not have any symmetries in this case. Finally, in Fig.~\ref{fig:Bands}(c), we plot the case $\varphi=\pi/2$. Here, a magnetostatic surface mode appears but does not couple to the Lamb waves. This is because $G^u=0,\bm{f}=\bm{0}$, so that Eq.~(\ref{eq:CoupledEOM}) reduces to two independent equations. \DIFdelbegin \DIFdel{In other words, the magnetostatic modes are odd under the mirror reflection }\DIFdelend \DIFaddbegin \DIFadd{The decoupling arises from the mirror symmetry }\DIFaddend with respect to the \DIFdelbegin \DIFdel{$xz$ plane , while the elastic modes are even, and therefore they do not couple. Note, however, that this }\DIFdelend \DIFaddbegin \DIFadd{plane normal to the $y$ axis, under which the magnetostatic and Lamb waves are odd and even, respectively. This }\DIFaddend symmetry argument does not constrain the coupling to deformations along the $y$ direction. Nevertheless, Maxwell's equations~(\ref{eq:Maxwell_couple_div}) and (\ref{eq:Maxwell_couple_rot}) do not involve $u_y$ within the magnetostatic approximation and to linear order in $\bm{m}$ and $\bm{u}$. Therefore, in the present theory, magnetostatic and elastic waves are completely decoupled when $\varphi=\pi/2$.
 
 From the magnitude of the hybridization gaps, the effective coupling strength $g_{\mathrm{eff}}$ is estimated to be on the order of a few MHz. On the other hand, assuming a typical Gilbert damping parameter $\alpha \approx 10^{-4}$~\cite{YIGalpha_PRAppl}, a quality factor $Q \approx 10^3$, and operating frequencies $\omega$ in the GHz range, the corresponding magnon and phonon linewidths are estimated as $\gamma_m \sim \alpha \omega$ and $\kappa \sim \omega/Q$, respectively. Under these conditions, $g_{\mathrm{eff}}^2/(\gamma_m\kappa)\sim1$, suggesting that the system is close to the boundary of the strong-coupling regime~\cite{rodriguezClassicalQuantumDistinctions2016}. Therefore, the hybridization gaps are expected to be experimentally resolvable.
 
-To generate the same gap via magnetoelastic coupling for bulk transverse waves, the magnetoelastic coupling constant $b_2$ would need to be on the order of $10^4$ J/m$^3$~\cite{Hioki2022}, which is one order of magnitude smaller than the experimental value for YIG, $b_2 \sim 10^5$ J/m$^3$~\cite{Krysztofik2021}. This result indicates that the dipolar contribution to the magnetoelastic coupling is subdominant compared to other mechanisms in realistic systems.
+\DIFdelbegin \DIFdel{From the same hybridization gaps, we further estimate }\DIFdelend \DIFaddbegin \DIFadd{To generate the same gap via magnetoelastic coupling for bulk transverse waves, }\DIFaddend the magnetoelastic coupling constant $b_2$ \DIFaddbegin \DIFadd{would need }\DIFaddend to be on the order of $10^4$ J/m$^3$~\cite{Hioki2022}, which is one order of magnitude smaller than the experimental value \DIFaddbegin \DIFadd{for YIG}\DIFaddend , $b_2 \sim 10^5$ J/m$^3$~\cite{Krysztofik2021}. This result indicates that the dipolar contribution to the magnetoelastic coupling is subdominant compared to other mechanisms in realistic systems.
 
 In conclusion, we have developed a theoretical description of magnetoelastic coupling mediated by magnetic dipolar interactions in ferromagnetic thin films. The dipolar field was derived from Maxwell's equations in the presence of elastic deformations, and the coupled equations of motion were obtained within the Lagrangian formalism. Numerical calculations were performed for a YIG thin film to obtain the dispersion relations of the coupled modes. We found anti-crossings due to mode hybridization, with gaps of several MHz in general. When the external in-plane magnetic field is parallel to the wave propagation, the system has $C_2$ symmetry, so only magnetostatic and elastic waves with the same $C_2$ symmetry eigenvalues can hybridize. When they are perpendicular, couplings do not occur. The formulation developed here provides a starting point for theoretical studies of dipolar-interaction-mediated magnetoelastic coupling in ferromagnetic thin films.
 
-\ack{H. Y. acknowledges support from Japan Society for the Promotion of Science (JSPS) KAKENHI Grant Number JP24KJ1109 and MEXT Initiative to Establish Next-generation Novel Integrated Circuits Centers (X-NICS) Grant Number JPJ011438. 
+\DIFdelbegin %DIFDELCMD < \ack{H. Y. acknowledges support from Japan Society for the Promotion of Science (JSPS) KAKENHI Grant No. JP24KJ1109 and by MEXT Initiative to Establish Next-generation Novel Integrated Circuits Centers (X-NICS) Grant No. JPJ011438. S. M. acknowledges support by Japan Society for the Promotion of Science (JSPS) KAKENHI Grant No. JP22K18687, No. JP22H00108, and No. JP24H02231.}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \ack{H. Y. acknowledges support from Japan Society for the Promotion of Science (JSPS) KAKENHI Grant Number JP24KJ1109 and MEXT Initiative to Establish Next-generation Novel Integrated Circuits Centers (X-NICS) Grant Number JPJ011438. 
 M. F. acknowledges support from Japan Society for the Promotion of Science (JSPS) KAKENHI Grant Numbers JP23KJ0339 and JP24K16987, and JST PRESTO Grant Number JPMJPR25H8. 
 M. A. acknowledges support from Japan Society for the Promotion of Science (JSPS) KAKENHI Grant Number JP23H05463. 
 D. H. acknowledges support from Japan Society for the Promotion of Science (JSPS) KAKENHI Grant Numbers JP21H05020, JP24H02235, and JP23H05463. 
 K. Y. acknowledges support from Japan Society for the Promotion of Science (JSPS) KAKENHI Grant Numbers JP24K00576 and JP25H00837 and from JSPS Bilateral Program Number JPJSBP120245708. 
 S. M. acknowledges support from Japan Society for the Promotion of Science (JSPS) KAKENHI Grant Numbers JP22K18687, JP22H00108, JP24H02230, and JP24H02231.}
+\DIFaddend 
 
 \bibliographystyle{iopart-num.bst}
 \bibliography{Ref_MSEW.bib}
