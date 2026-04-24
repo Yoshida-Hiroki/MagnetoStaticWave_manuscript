@@ -1,0 +1,181 @@
+\clearpage
+\onecolumngrid
+\setcounter{equation}{0}
+\renewcommand{\theequation}{S\arabic{equation}}
+
+\section*{Magnetoelastic Waves in Ferromagnetic Thin Films Mediated by Dipolar Interactions: Supplementary data}
+
+% Hiroki Yoshida$^1$, Ryohei Kono$^1$, Manato Fujimoto$^2$, Motoki Asano$^3$, \\Daiki Hatanaka$^3$, Kei Yamamoto$^{4,5}$, Shuichi Murakami$^{2,5,6}$\\
+% \date{\small\textit{$^1$ Department of Physics, Institute of Science Tokyo, 2-12-1 Ookayama, Meguro-ku, Tokyo 152-8551, Japan\\
+% $^2$ Department of Applied Physics, The University of Tokyo, 7-3-1 Hongo, Bunkyo-ku, Tokyo 113-8656, Japan\\
+% $^3$ Basic Research Laboratories, NTT, Inc., 3-1 Morinosato-Wakamiya, Atsugi-shi, Kanagawa 243-0198, Japan\\
+% $^4$ Advanced Science Research Center, Japan Atomic Energy Agency, Tokai, Ibaraki 319-1195, Japan\\
+% $^5$ Center for Emergent Matter Science, RIKEN, 2-1 Hirosawa, Wako, Saitama 351-0198, Japan\\
+% $^6$ International Institute for Sustainability with Knotted Chiral Meta Matter (WPI-SKCM$^2$), Hiroshima University, Higashi-hiroshima, Hiroshima 739-0046, Japan}}
+
+\subsection{Jacobian matrix}
+\label{sec:Jacobian}
+
+Here we calculate the Jacobian matrix and its determinant for the transformation $\bm{r}\mapsto\bm{R}=\bm{r}+\bm{u}(\bm{r},t)$ up to first order in $\bm{u}$.
+
+The definition of the Jacobian matrix $J$ is
+\be
+    J_{ij}(\bm{r})&\coloneqq \delta_{ij}+\frac{\partial u_i}{\partial r_j}.
+\ee
+Then, its determinant is given as
+\be
+    \det J&=\varepsilon_{i_1i_2i_3}J_{1i_1}J_{2i_2}J_{3i_3}\nonumber\\
+    &=\varepsilon_{i_1i_2i_3}\left(\delta_{1i_1}+\frac{\partial u_{1}}{\partial r_{i_1}}\right)\left(\delta_{2i_2}+\frac{\partial u_{2}}{\partial r_{i_2}}\right)\left(\delta_{3i_3}+\frac{\partial u_{3}}{\partial r_{i_3}}\right)\nonumber\\
+    &=1+\frac{\partial u_{1}}{\partial r_{1}}+\frac{\partial u_{2}}{\partial r_{2}}+\frac{\partial u_{3}}{\partial r_{3}}+\mathcal{O}\left((\partial u)^2\right)\nonumber\\
+    &\approx 1+\nabla\cdot\bm{u}.
+\ee
+For a nonsingular $3\times3$ matrix \(A\), its inverse is given by
+\be
+    A^{-1}&=\frac{1}{\det A}C^T,
+\ee
+where \(C\) is a cofactor matrix defined by
+\be
+    C_{ij}&\coloneqq \frac{1}{2}\varepsilon_{ii_1i_2}\varepsilon_{jj_1j_2}A_{i_1j_1}A_{i_2j_2}.
+\ee
+Applying this to the Jacobian matrix, we obtain
+\be
+    \left[\left(J^{-1}\right)^T\right]_{ij}&=\left(J^{-1}\right)_{ji}\nonumber\\
+    &=\frac{1}{\det J}C_{ij}\nonumber\\
+    &=\frac{1}{2\det J}\varepsilon_{ii_1i_2}\varepsilon_{jj_1j_2}J_{i_1j_1}J_{i_2j_2}\nonumber\\
+    &=\frac{1}{2\det J}\varepsilon_{ii_1i_2}\varepsilon_{jj_1j_2}\left(\delta_{i_1j_1}+\frac{\partial u_{i_1}}{\partial r_{j_1}}\right)\left(\delta_{i_2j_2}+\frac{\partial u_{i_2}}{\partial r_{j_2}}\right)\nonumber\\
+    &\approx \frac{1}{2}\left(1-\nabla\cdot\bm{u}\right)\left(\varepsilon_{ii_1i_2}\varepsilon_{ji_1i_2}+\varepsilon_{ij_1i_2}\varepsilon_{jj_1j_2}\frac{u_{i_2}}{r_{j_2}}+\varepsilon_{ii_1j_2}\varepsilon_{jj_1j_2}\frac{u_{i_1}}{r_{j_1}}\right)\nonumber\\
+    &=\left(1-\frac{\partial u_{i_1}}{\partial r_{i_1}}\right)\delta_{ij}+\frac{1}{2}\left(1-\frac{\partial u_{i_1}}{\partial r_{i_1}}\right)\left(2\delta_{ij}\frac{\partial u_{i_1}}{\partial r_{i_1}}-2\frac{\partial u_j}{\partial r_i}\right)\nonumber\\
+    &\approx\delta_{ij}-\frac{\partial u_j}{\partial r_i}.
+\ee
+
+
+\subsection{Derivation of the dipolar field}
+\label{sec:Derivation_h}
+
+Here, we derive the dipolar field that gives rise to magnetoelastic coupling.
+
+We start from Maxwell's equations in the Lagrangian coordinate $\bm{R}$:
+\be
+    \nabla_{\bm{R}}\cdot(\bm{H}_{\mathrm{in}}(\bm{R},t)+\bm{M}(\bm{R},t))&=0,\\
+    \nabla_{\bm{R}}\times\bm{H}_{\mathrm{in}}(\bm{R},t)&\approx0,
+\ee
+where \(\nabla_{\bm{R}}\) denotes the derivative with respect to \(\bm{R}\). We then rewrite these equations in terms of the Eulerian coordinate $\bm{r}$. In doing so, we must take into account the conservation of magnetization~\cite{Yamamoto_Maekawa_AnnPhys}:
+\be
+    \int_{V_R}\rmd^3R\,\bm{M}(\bm{R},t)&=\int_{V_r}\rmd^3r\, \bm{M}(\bm{r},t)\nonumber\\
+    \Rightarrow \int_{V_r}\rmd^3r\,(\det J)\bm{M}(\bm{R}(\bm{r}),t)&=\int_{V_r}\rmd^3r\, \bm{M}(\bm{r},t)\qquad \forall V_r.\nonumber\\
+    \therefore \bm{M}(\bm{R})&=\frac{1}{\det J(\bm{r})}\bm{M}(\bm{r}).
+\ee
+Then, using the Jacobian matrix of the coordinate transformation, the Maxwell's equations become
+\be
+    \nabla_{\bm{R}}\cdot(\bm{H}_{\mathrm{in}}(\bm{R},t)+\bm{M}(\bm{R},t))&=0\nonumber\\
+    \Rightarrow\left[\left(J^{-1}\right)^T\right]_{ij}\frac{\partial}{\partial r_j}\left(h_i(\bm{r},t)+\frac{1}{\det J}M_i(\bm{r})\right)&=0,\label{eq:Maxwell_r1}
+\ee
+and
+\be
+    \nabla_{\bm{R}}\times\bm{H}_{\mathrm{in}}(\bm{R},t)&\approx0\nonumber\\
+    \Rightarrow\varepsilon_{ijk}\left[\left(J^{-1}\right)^T\right]_{il}\frac{\partial}{\partial r_l}h_j(\bm{r})&\approx0\qquad\forall k=x,y,z\label{eq:Maxwell_r2}.
+\ee
+From the results of Sec.~\ref{sec:Jacobian}, up to first order in $\bm{m}$ and $\bm{u}$, we obtain
+\be
+    \nabla_r\cdot\left(\bm{h}^{\mathrm{in}}(\bm{r})+\bm{m}(\bm{r})\right)&=\bm{M}_0\cdot\nabla_r\left(\nabla_r\cdot\bm{u}(\bm{r})\right),\\
+    \nabla_r\times\bm{h}^{\mathrm{in}}(\bm{r})&=0,
+\ee
+for points inside the thin film. The equations outside of the film are the same as those in the previous section:
+\be
+    \nabla\cdot\bm{h}^{\mathrm{out}}(\bm{r},t)&=0,\nonumber\\
+    \nabla\times\bm{h}^{\mathrm{out}}(\bm{r},t)&\approx0.\nonumber
+\ee
+Since $\bm{h}^{\mathrm{in/out}}$ are rotation-free even in the presence of magnetoelastic coupling under the magnetostatic approximation, we introduce scalar potential as
+\be
+    \bm{h}^{\mathrm{in/out}}=-\nabla\phi^{\mathrm{in/out}}.\nonumber
+\ee
+Outside the film, the solution is given by
+\be
+    \phi^{\mathrm{out}}=\left\{\begin{array}{l}
+        Ae^{+kz}\quad (z<-\frac{L}{2})\\
+        Be^{-kz}\quad (z>+\frac{L}{2}),
+    \end{array}\right.\label{eq:phi_out}
+\ee
+because $\phi^{\mathrm{out}}\to0$ as $|z|\to\infty$.
+
+The boundary conditions are expressed in terms of the continuity of the tangential component of the magnetic field and the normal component of the magnetic flux density:
+\be
+    \bm{H}^{\mathrm{in}}\cdot\bm{t}&=\bm{H}^{\mathrm{out}}\cdot\bm{t},\label{eq:BC_H_tangental}\\
+    \left(\bm{H}^{\mathrm{in}}+\bm{M}\right)\cdot\bm{n}&=\bm{H}^{\mathrm{out}}\cdot\bm{n},\label{eq:BC_B_normal}
+\ee
+where $\bm{t}$ and $\bm{n}$ are the tangential and normal vectors to the surface, respectively. Since the system is uniform in the $y$ direction, we restrict our analysis to the $xz$ plane. In this case, these vectors are given by
+\be
+    \bm{t}&=\left(1+\frac{\partial u_x}{\partial x},0,\frac{\partial u_z}{\partial x}\right),\\
+    \bm{n}&=\left(-\frac{\partial u_z}{\partial x},0,1+\frac{\partial u_x}{\partial x}\right).
+\ee
+Using the solution~\eqref{eq:phi_out}, we obtain the following boundary condition for $\phi^{\mathrm{in}}$:
+\be
+    \left(\pm k+\partial_z\right)\phi^{\mathrm{in}}\lvert_{z=\pm\frac{L}{2}}&=\left(m_z-ikM_{0,x}u_z\right)\lvert_{z=\pm\frac{L}{2}},\label{eq:BC_coupled_phi^in}
+\ee
+where the signs correspond to the boundaries at $z=\pm L/2$. Accordingly, we need to solve the differential equation
+\be
+    \nabla^2\phi^{\mathrm{in}}&=\nabla\cdot\bm{m}-\bm{M}_0\cdot\nabla\left(\nabla\cdot\bm{u}(\bm{r})\right),
+\ee
+subject to the boundary condition~\eqref{eq:BC_coupled_phi^in}. 
+
+To this end, we introduce a Green's function $g(z,z')$ satisfying
+\be
+    \nabla^2g(z,z')&=\delta(z-z'),\qquad \left(z,z'\in\left(-\frac{L}{2},\frac{L}{2}\right)\right)\label{eq:Coupled_g_PDE},
+\ee
+with the boundary condition
+\be
+    \left(\pm k+\partial_z\right)g(z,z')\lvert_{z=\pm\frac{L}{2}}&=0\label{eq:Coupled_g_BC}.
+\ee
+Using this $g(z,z')$, $\phi^{\mathrm{in}}$ can be written as
+\be
+    \phi^{\mathrm{in}}(z)&=\int\rmd z'\left[\nabla g(z,z')\cdot\bm{m}(z')-\nabla\left(\bm{M}_0\cdot\nabla g(z,z')\right)\cdot\bm{u}(z')\right].
+\ee
+The solution of Eqs.~\eqref{eq:Coupled_g_PDE} and~\eqref{eq:Coupled_g_BC} is obtained, for example, by Fourier transformation as
+\be
+    g(z,z')&=-\frac{1}{2k}e^{-k|z-z'|}.
+\ee
+Taking the gradient, we obtain the dipolar field (as given in the main text):
+\be
+    \bm{h}^{\mathrm{in}}(z)=\int_{-\frac{L}{2}}^{\frac{L}{2}}\rmd z'\left[G^m(z,z')\bm{m}(z')+G^u(z,z')\bm{u}(z')\right],
+\ee
+where the first term is the same as that in Ref.~\cite{Kalinikos_Slavin_1986}, and
+\be
+    G^m(z,z')&=\left(\begin{array}{ccc}
+        -G_P(z,z')&0&-iG_Q(z,z')\\
+        0&0&0\\
+        -iG_Q(z,z')&0&G_{P'}(z,z')
+    \end{array}\right),\\
+    G^u(z,z')&=-ikM_{0,x}G^m(z,z'),\\
+    G_{P}(z,z')&=\frac{k}{2}e^{-k|z-z'|},\\
+    G_{Q}(z,z')&=\mathrm{sgn}(z-z')G_{P}(z,z'),\\
+    G_{P'}(z,z')&=G_{P}(z,z')-\delta(z-z').
+\ee
+
+
+\subsection{Derivation of the force}
+\label{sec:Derivation_f}
+
+Here, we derive the force induced by magnetoelastic coupling.
+
+The Euler--Lagrange equation with respect to $u^*_i$ yields
+\be
+    \int \rmd z\Re\left[\rho\ddot{u}_i-\left(-\mu_0\frac{\delta h_a^*}{\delta u_i^*}h_a+\partial_i\sigma_{ij}\right)\right]=0\label{eq:Formal_NC},
+\ee
+where the second term represents the volume force arising from the dipolar field.
+
+A straightforward calculation shows that
+\be
+    \int^{\infty}_{-\infty}\rmd z''\left(G^m(z'',z)\right)^*G^m(z'',z')=\int^{\infty}_{-\infty}\rmd z''G^m(z,z'')G^m(z'',z')&=-G^m(z,z'),\label{eq:Formula_Gmprod}\\
+    \int^{\infty}_{-\infty}\rmd z''\left(G^m(z'',z)\right)^*G^u(z'',z')=\int^{\infty}_{-\infty}\rmd z''G^m(z,z'')G^u(z'',z')&=-G^u(z,z').\label{eq:Formula_Gmuprod}
+\ee
+Then,
+\be
+    \int\rmd z\frac{\delta h^*_a(z)}{\delta u^*_i}h_a(z)&=\int\rmd z\rmd z'\rmd z''(+ikM_{0,x})\left(G^m(z,z')\right)^*_{ia}\left[G^m(z,z'')\bm{m}(z'')+G^u(z,z'')\bm{u}(z'')\right]_a\nonumber\\
+    &=-ikM_{0,x}\int\rmd z'\int\rmd z''\left[G^m(z',z'')\bm{m}(z'')+G^u(z',z'')\bm{u}(z'')\right]_i\nonumber\\
+    &=-ikM_{0,x}\int\rmd z'h^{\mathrm{in}}_i(z').
+\ee
+Thus, we obtain
+\be
+    f_i(z)\coloneqq-ik\mu_0M_{0,x}h_i(z).
+\ee
+
