@@ -1,0 +1,154 @@
+\documentclass[11pt]{revtex4-2}
+% \usepackage[a4paper,margin=25mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{bm}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue}
+
+\newenvironment{refereecomment}{\par\begingroup\color{blue}\noindent}{\par\endgroup}
+\newcommand{\ResponseHeader}{\par\vspace{0.6em}\noindent\textbf{Response:}\par\noindent}
+\newcommand{\ManuscriptChangeHeader}{\par\vspace{0.4em}\noindent\textbf{Changes in the manuscript:}\par\noindent}
+
+\begin{document}
+
+\begin{center}
+{\Large JJAP-107450: Magnetoelastic Waves in Ferromagnetic Thin Films Mediated by Dipolar Interactions}\\[0.5em]
+\end{center}
+
+Dear Dr. Ono,\\
+
+We sincerely thank you for handling our manuscript. We are also grateful to the referee for their careful reading of our work and for the constructive comments.\\
+
+The referee asked us to clarify whether the magnetoelastic contribution can be expressed in terms of an energy density, as in earlier studies of magnetoelastic coupling. Accordingly, we have revised the manuscript to include the relevant energy-density expression and have added citations to the corresponding previous works.\\
+
+We believe that these revisions have improved the clarity of the manuscript, and we hope that it is now suitable for publication in the Japanese Journal of Applied Physics.\\
+
+
+\noindent
+Sincerely,\\
+
+\noindent
+Hiroki Yoshida,\\
+Ryohei Kono,\\
+Manato Fujimoto,\\
+Motoki Asano,\\
+Daiki Hatanaka,\\
+Kei Yamamoto,\\
+Shuichi Murakami
+
+
+\newpage
+
+\section*{Response to the Referee: 1}
+\begin{refereecomment}
+    The manuscript by Hiroki Yoshida and colleagues reports a theoretical investigation of coupled magnetostatic and elastic waves in an isotropic ferromagnetic material. They consider the magnetoelastic coupling arising from dipolar interactions alone which results from the Maxwell’s equations when the changes to the material due to the elastic deformations are taken into account. The authors find that there is a small but finite anti-crossing between the spin wave modes and elastic modes for in-plane applied magnetic fields.
+
+    This is a high quality theoretical work which addresses the potential role of dipolar interactions in causing magnetoelastic coupling manifested via level repulsion between the spin waves and elastic modes. Due to the ubiquitous nature of dipolar interactions, the authors’ investigation provides a universal ingredient for all magnetic materials. Thus, I recommend the publication of this work after the authors have considered one minor comment below.
+
+    The conclusion reached by the authors, that dipolar inetraction-mediated magnon-phonon coupling strength is 1 order of magnitude smaller than what is actually found in yttrium iron garnet, is consistent with the early works by Neel and others on magnetoelastic coupling in ferromagnets which reached the same conclusion. These works arrived at this conclusion by evaluating the typical magnetoelastic coupling energy density in terms of the strain and magnetization components due to dipolar interactions. My question is if it is possible to express a similar magnetoelastic energy density in the calculations performed by the authors here. In Eqs. (13) and (15), the authors have mentioned the Lagrangian density for magnetic and elastic degrees of freedom, before switching completely to equations of motion. It can be useful to present the “magnetoelastic” contribution that emerges in the total Lagrangian density.\\
+\end{refereecomment}
+
+% \ResponseHeader
+Dear Referee,\\
+
+We thank the Referee for the valuable comment. We agree that it is useful to clarify the magnetoelastic contribution to the energy or Lagrangian. In the present formulation, the coupling arises from the magnetic-field energy term proportional to $\bm{h}^*\cdot\bm{h}$, because the dipolar field $\bm{h}$ depends on both the dynamic magnetization $\bm{m}$ and the elastic displacement $\bm{u}$. Since the dipolar interaction is intrinsically long-ranged, the resulting magnetoelastic coupling is more naturally expressed as a nonlocal contribution to the Lagrangian rather than as a local energy density of the form used in conventional magnetoelastic theories~\cite{Kittel1949,KittelAbrahams1953,CallenCallen1963}.
+
+From the Lagrangian in the main text, the relevant term is
+\begin{align*}
+    \frac{\mu_0}{4}\int\mathrm{d} z\,\Re\left[\bm{h}^*\cdot\bm{h}\right]
+    &=
+    \frac{\mu_0}{4}\int\mathrm{d} z\,
+    \Re\left[
+    \left(
+    \int\mathrm{d}z'\,
+    \left[
+    G^m(z,z')\bm{m}(z')
+    +
+    G^u(z,z')\bm{u}(z')
+    \right]
+    \right)^*\right.\\
+    &\hspace{3cm}\left.\cdot
+    \left(
+    \int\mathrm{d}z''\,
+    \left[
+    G^m(z,z'')\bm{m}(z'')
+    +
+    G^u(z,z'')\bm{u}(z'')
+    \right]
+    \right)
+    \right],
+\end{align*}
+where $G^u(z,z')=-ikM_{0,x}G^m(z,z')$. Using the properties of $G^m$, such as
+$\left(G^m(z,z')\right)^*=G^m(z',z)$ and
+$\int\mathrm{d}z\,G^m(z',z)G^m(z,z'')=-G^m(z',z'')$,
+the magnetoelastic part of the total Lagrangian becomes
+\begin{equation*}
+    L^{\mathrm{me}}
+    =
+    \frac{\mu_0 k}{2}
+    \Im\left[
+    \int\mathrm{d} z'\int\mathrm{d} z''\,
+    M_{0,x}\bm{m}^*(z')\cdot G^m(z',z'')\bm{u}(z'')
+    \right].
+\end{equation*}
+This expression is analogous to the standard magnetoelastic coupling energy density,
+\begin{equation*}
+    f^{\mathrm{me}}
+    =
+    b_1\left(
+    \alpha_1^2\varepsilon_{xx}
+    +
+    \alpha_2^2\varepsilon_{yy}
+    +
+    \alpha_3^2\varepsilon_{zz}
+    \right)
+    +
+    b_2\left(
+    \alpha_1\alpha_2\varepsilon_{xy}
+    +
+    \alpha_2\alpha_3\varepsilon_{yz}
+    +
+    \alpha_3\alpha_1\varepsilon_{zx}
+    \right),
+\end{equation*}
+but it explicitly retains the long-range nature of the dipolar interaction.
+
+\ManuscriptChangeHeader
+We have added the following sentence after Eq.~(15) in the main text:
+
+\begin{quote}
+As a result, a magnetoelastic coupling term of the form
+\begin{equation}
+    L^{\mathrm{me}}
+    =
+    \frac{\mu_0 k}{2}
+    \iint\mathrm{d}z'\mathrm{d}z''\,
+    \Im\left[
+    M_{0,x}\bm{m}^*(z')\cdot G^m(z',z'')\bm{u}(z'')
+    \right]\nonumber
+\end{equation}
+arises from the $\bm{h}^*\cdot\bm{h}$ term in the Lagrangian. This term is analogous to the standard local magnetoelastic coupling density~[18,19,20], while retaining the explicitly long-range character of the dipolar interaction.
+\end{quote}
+
+\clearpage
+\section*{Summary of Changes}
+\begin{itemize}
+    \item Below Eq.~(15), we inserted ``As a result, a magnetoelastic coupling term of the form
+    $L^{\mathrm{me}}
+    =
+    \frac{\mu_0 k}{2}
+    \iint\mathrm{d}z'\mathrm{d}z''\,
+    \Im\left[
+    M_{0,x}\bm{m}^*(z')\cdot G^m(z',z'')\bm{u}(z'')
+    \right]$
+arises from the $\bm{h}^*\cdot\bm{h}$ term in the Lagrangian. This term is analogous to the standard local magnetoelastic coupling density~[18,19,20], while retaining the explicitly long-range character of the dipolar interaction.''
+\end{itemize}
+
+
+\bibliography{../../Ref_MSEW.bib}
+
+\end{document}
