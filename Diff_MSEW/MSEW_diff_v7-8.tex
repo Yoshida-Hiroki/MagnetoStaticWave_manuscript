@@ -1,0 +1,264 @@
+\documentclass[10pt]{iopart}
+%DIF LATEXDIFF DIFFERENCE FILE
+%DIF DEL 260222_MSEW_v7.tex   Tue May 26 13:22:40 2026
+%DIF ADD 260222_MSEW_v8.tex   Fri Jun 12 17:11:51 2026
+\usepackage{graphicx}
+\usepackage{iopams}
+\usepackage{bm}
+\usepackage{hyperref}
+%DIF PREAMBLE EXTENSION ADDED BY LATEXDIFF
+%DIF UNDERLINE PREAMBLE %DIF PREAMBLE
+\RequirePackage[normalem]{ulem} %DIF PREAMBLE
+\RequirePackage{color}\definecolor{RED}{rgb}{1,0,0}\definecolor{BLUE}{rgb}{0,0,1} %DIF PREAMBLE
+\providecommand{\DIFaddtex}[1]{{\protect\color{blue}\uwave{#1}}} %DIF PREAMBLE
+\providecommand{\DIFdeltex}[1]{{\protect\color{red}\sout{#1}}} %DIF PREAMBLE
+%DIF SAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddbegin}{} %DIF PREAMBLE
+\providecommand{\DIFaddend}{} %DIF PREAMBLE
+\providecommand{\DIFdelbegin}{} %DIF PREAMBLE
+\providecommand{\DIFdelend}{} %DIF PREAMBLE
+\providecommand{\DIFmodbegin}{} %DIF PREAMBLE
+\providecommand{\DIFmodend}{} %DIF PREAMBLE
+%DIF FLOATSAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddFL}[1]{\DIFadd{#1}} %DIF PREAMBLE
+\providecommand{\DIFdelFL}[1]{\DIFdel{#1}} %DIF PREAMBLE
+\providecommand{\DIFaddbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFaddendFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelendFL}{} %DIF PREAMBLE
+%DIF HYPERREF PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFadd}[1]{\texorpdfstring{\DIFaddtex{#1}}{#1}} %DIF PREAMBLE
+\providecommand{\DIFdel}[1]{\texorpdfstring{\DIFdeltex{#1}}{}} %DIF PREAMBLE
+\newcommand{\DIFscaledelfig}{0.5}
+%DIF HIGHLIGHTGRAPHICS PREAMBLE %DIF PREAMBLE
+\RequirePackage{settobox} %DIF PREAMBLE
+\RequirePackage{letltxmacro} %DIF PREAMBLE
+\newsavebox{\DIFdelgraphicsbox} %DIF PREAMBLE
+\newlength{\DIFdelgraphicswidth} %DIF PREAMBLE
+\newlength{\DIFdelgraphicsheight} %DIF PREAMBLE
+% store original definition of \includegraphics %DIF PREAMBLE
+\LetLtxMacro{\DIFOincludegraphics}{\includegraphics} %DIF PREAMBLE
+\newcommand{\DIFaddincludegraphics}[2][]{{\color{blue}\fbox{\DIFOincludegraphics[#1]{#2}}}} %DIF PREAMBLE
+\newcommand{\DIFdelincludegraphics}[2][]{% %DIF PREAMBLE
+\sbox{\DIFdelgraphicsbox}{\DIFOincludegraphics[#1]{#2}}% %DIF PREAMBLE
+\settoboxwidth{\DIFdelgraphicswidth}{\DIFdelgraphicsbox} %DIF PREAMBLE
+\settoboxtotalheight{\DIFdelgraphicsheight}{\DIFdelgraphicsbox} %DIF PREAMBLE
+\scalebox{\DIFscaledelfig}{% %DIF PREAMBLE
+\parbox[b]{\DIFdelgraphicswidth}{\usebox{\DIFdelgraphicsbox}\\[-\baselineskip] \rule{\DIFdelgraphicswidth}{0em}}\llap{\resizebox{\DIFdelgraphicswidth}{\DIFdelgraphicsheight}{% %DIF PREAMBLE
+\setlength{\unitlength}{\DIFdelgraphicswidth}% %DIF PREAMBLE
+\begin{picture}(1,1)% %DIF PREAMBLE
+\thicklines\linethickness{2pt} %DIF PREAMBLE
+{\color[rgb]{1,0,0}\put(0,0){\framebox(1,1){}}}% %DIF PREAMBLE
+{\color[rgb]{1,0,0}\put(0,0){\line( 1,1){1}}}% %DIF PREAMBLE
+{\color[rgb]{1,0,0}\put(0,1){\line(1,-1){1}}}% %DIF PREAMBLE
+\end{picture}% %DIF PREAMBLE
+}\hspace*{3pt}}} %DIF PREAMBLE
+} %DIF PREAMBLE
+\LetLtxMacro{\DIFOaddbegin}{\DIFaddbegin} %DIF PREAMBLE
+\LetLtxMacro{\DIFOaddend}{\DIFaddend} %DIF PREAMBLE
+\LetLtxMacro{\DIFOdelbegin}{\DIFdelbegin} %DIF PREAMBLE
+\LetLtxMacro{\DIFOdelend}{\DIFdelend} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFaddbegin}{\DIFOaddbegin \let\includegraphics\DIFaddincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFaddend}{\DIFOaddend \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFdelbegin}{\DIFOdelbegin \let\includegraphics\DIFdelincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFdelend}{\DIFOaddend \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+\LetLtxMacro{\DIFOaddbeginFL}{\DIFaddbeginFL} %DIF PREAMBLE
+\LetLtxMacro{\DIFOaddendFL}{\DIFaddendFL} %DIF PREAMBLE
+\LetLtxMacro{\DIFOdelbeginFL}{\DIFdelbeginFL} %DIF PREAMBLE
+\LetLtxMacro{\DIFOdelendFL}{\DIFdelendFL} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFaddbeginFL}{\DIFOaddbeginFL \let\includegraphics\DIFaddincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFaddendFL}{\DIFOaddendFL \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFdelbeginFL}{\DIFOdelbeginFL \let\includegraphics\DIFdelincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFdelendFL}{\DIFOaddendFL \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+%DIF COLORLISTINGS PREAMBLE %DIF PREAMBLE
+\RequirePackage{listings} %DIF PREAMBLE
+\RequirePackage{color} %DIF PREAMBLE
+\lstdefinelanguage{DIFcode}{ %DIF PREAMBLE
+%DIF DIFCODE_UNDERLINE %DIF PREAMBLE
+  moredelim=[il][\color{red}\sout]{\%DIF\ <\ }, %DIF PREAMBLE
+  moredelim=[il][\color{blue}\uwave]{\%DIF\ >\ } %DIF PREAMBLE
+} %DIF PREAMBLE
+\lstdefinestyle{DIFverbatimstyle}{ %DIF PREAMBLE
+	language=DIFcode, %DIF PREAMBLE
+	basicstyle=\ttfamily, %DIF PREAMBLE
+	columns=fullflexible, %DIF PREAMBLE
+	keepspaces=true %DIF PREAMBLE
+} %DIF PREAMBLE
+\lstnewenvironment{DIFverbatim}{\lstset{style=DIFverbatimstyle}}{} %DIF PREAMBLE
+\lstnewenvironment{DIFverbatim*}{\lstset{style=DIFverbatimstyle,showspaces=true}}{} %DIF PREAMBLE
+\lstset{extendedchars=\true,inputencoding=utf8}
+
+%DIF END PREAMBLE EXTENSION ADDED BY LATEXDIFF
+
+\begin{document}
+\title{Magnetoelastic Waves in Ferromagnetic Thin Films Mediated by Dipolar Interactions}
+
+\author{Hiroki Yoshida$^1$, Ryohei Kono$^1$, Manato Fujimoto$^2$, Motoki Asano$^3$, Daiki Hatanaka$^3$, Kei Yamamoto$^{4,5}$, Shuichi Murakami$^{2,5,6}$}
+\address{$^1$ Department of Physics, Institute of Science Tokyo, 2-12-1 Ookayama, Meguro-ku, Tokyo 152-8551, Japan}
+\address{$^2$ Department of Applied Physics, The University of Tokyo, 7-3-1 Hongo, Bunkyo-ku, Tokyo 113-8656, Japan}
+\address{$^3$ Basic Research Laboratories, NTT, Inc., 3-1 Morinosato-Wakamiya, Atsugi-shi, Kanagawa 243-0198, Japan}
+\address{$^4$ Advanced Science Research Center, Japan Atomic Energy Agency, Tokai, Ibaraki 319-1195, Japan}
+\address{$^5$ Center for Emergent Matter Science, RIKEN, 2-1 Hirosawa, Wako, Saitama 351-0198, Japan}
+\address{$^6$ International Institute for Sustainability with Knotted Chiral Meta Matter (WPI-SKCM$^2$), Hiroshima University, Higashi-hiroshima, Hiroshima 739-0046, Japan}
+\ead{yoshida.h.9d8d@m.isct.ac.jp}
+
+
+\begin{abstract}
+    Magnetoelastic coupling mediated by magnetic dipolar interactions is theoretically investigated in ferromagnetic thin films under an in-plane magnetic field. We develop a theoretical description that incorporates dipolar fields derived from Maxwell's equations in the presence of elastic deformations. The resulting coupled equations of motion predict hybridization between magnetostatic and Lamb waves. Numerical calculations for a yttrium iron garnet (YIG) film reveal anti-crossings in the dispersion relations, with hybridization gaps \DIFdelbegin \DIFdel{ranging from }\DIFdelend \DIFaddbegin \DIFadd{on the order of }\DIFaddend $0.1$\DIFdelbegin \DIFdel{to several }\DIFdelend \DIFaddbegin \DIFadd{--$1$ }\DIFaddend MHz.
+\end{abstract}
+
+\submitto{\JJAP}
+\maketitle
+\ioptwocol
+
+Magnetoelastic coupling has attracted considerable attention because of its potential for manipulating magnetic properties via mechanical degrees of freedom~\cite{Kittel_PR,LL_EDinCM}. At the microscopic level, magnons and phonons are coupled via spin-orbit interaction~\cite{Kittel_PR,Kittel_Abraham_RMP,Flebus_magnonPolaron}. In contrast, at longer wavelengths, magnetic dipolar interactions also play an important role for the coupling. Recent experimental advances, particularly those based on interdigital transducers (IDTs), have enabled coherent excitation and precise characterization of acoustic waves in magnetic thin films~\cite{IDT_review,Kunstle2025}, allowing direct access to magnetoelastic coupling in this regime. While continuum theories describing magnetostatic~\cite{Walker1957,damoneshbachMagnetostaticModesFerromagnet1961,damonPropagationMagnetostaticSpin} and elastic waves~\cite{Rayleigh1885,Rayleigh1889,Lamb1889,lambWavesElasticPlate1917} in this regime have been developed separately, a unified theoretical framework that captures their coupling mediated by dipolar interactions remains lacking, primarily due to the long-range nature of the dipolar interaction and its singular behavior at short distances.
+
+In this Letter, we present a formulation of magnetoelastic coupling between magnetostatic and elastic waves mediated by dipolar interactions. Using a Green-function approach along the same lines as that developed by Kalinikos and Slavin~\cite{Kalinikos_Slavin_1986}, we consistently incorporate elastic deformations into the description, thereby enabling a quantitative evaluation of the coupling.
+
+Our system is schematically shown in Fig.~\ref{fig:Schematic}. We consider a ferromagnetic thin film that is infinitely extended in the $xy$ plane and has a finite thickness $L$ in the $z$ direction, with the origin taken at the middle of the film. It is assumed to be isotropic both magnetically and elastically. An in-plane external magnetic field $\bm{H}_0$ is applied, resulting in an equilibrium saturation magnetization $\bm{M}_0$ parallel to $\bm{H}_0$.
+
+\begin{figure}
+    \begin{center}
+        \includegraphics[width=\columnwidth]{fig/Schematic_MSEW.pdf}
+        \caption{Schematic illustration of the system under consideration. A ferromagnetic thin film with thickness $L$ in the $z$ direction and infinite extent in the $x$ and $y$ directions is considered. Magnetic moments precess around an axis parallel to the in-plane external magnetic field $\bm{H}_0$, which is applied at an angle $\varphi$ with respect to the $x$ axis. The elastic wave changes the positions of the magnetic moments and their separations, resulting in a modification of the dipolar interaction among them.}
+        \label{fig:Schematic}
+    \end{center}
+\end{figure}
+
+We decompose the magnetic field $\bm{H}$ and the magnetization $\bm{M}$ as $\bm{H}=\bm{H}_0+\bm{h}(\bm{r},t)$ and $\bm{M}=\bm{M}_0+\bm{m}(\bm{r},t)$, respectively, where $\bm{r}=(x,y,z)$ is the Euler coordinate, and study propagating magnetostatic waves of small deviations from the equilibrium magnetization. The system also supports elastic waves described by the displacement $\bm{u}(\bm{r},t)$. The deformation modulates the distance between magnetic dipoles, so that the dipolar field $\bm{h}(\bm{r},t)$ generated by $\bm{m}$ is influenced by $\bm{u}$, leading to a magnetoelastic wave. We take the $x$ axis to be parallel to the propagation direction and consider plane waves. The system is assumed to be uniform in the $y$ direction. Then, $\bm{m}$ and $\bm{u}$ can be written as
+\begin{equation}
+    \bm{m}(\bm{r},t)=\bm{m}(z)e^{i(kx-\omega t)},\\
+    \bm{u}(\bm{r},t)=\bm{u}(z)e^{i(kx-\omega t)},\label{eq:Assumption}
+\end{equation}
+where $\bm{m}(z),\bm{u}(z)\in\mathbb{C}^3$. Hereafter, all fields are treated as complex quantities, and physical observables are given by their real parts. We study the coupled dynamics of these waves up to first order in these quantities. Here, we focus exclusively on the case of an in-plane magnetic field. The case of an arbitrary external magnetic field will be presented elsewhere.
+
+We start from the basic equations describing the magnetic dipolar interaction, namely Maxwell's equations. When elastic deformation is present, the magnetic dipoles deviate from their equilibrium positions $\bm{r}$ to $\bm{R}:=\bm{r}+\bm{u}(\bm{r},t)$. The Maxwell's equations are then rewritten in terms of this Lagrange coordinate as
+\begin{equation}
+    \nabla_{\bm{R}}\cdot \left(\bm{H}+\bm{M}\right)=0,\qquad
+    \nabla_{\bm{R}}\times \bm{H}\approx 0,\label{eq:Maxwell_R}
+\end{equation}
+where in the second equation the magnetostatic approximation is applied and the time derivative of the electric field is discarded. This approximation is justified in the absence of steady currents and under the quasi-static condition $\omega L / c \ll 1$, where $\omega$ and $L$ are the characteristic frequency and length scale of the magnetization dynamics and $c$ is the speed of light. In this regime, retardation effects and electromagnetic radiation can be neglected~\cite{Stancil_TheoryofMagnetostaticWaves}. By the plane-wave assumption~(\ref{eq:Assumption}), the dipolar field can also be written as $\bm{h}=\bm{h}(z)e^{i(kx-\omega t)}$. We rewrite Eq.~(\ref{eq:Maxwell_R}) in terms of these quantities in the Euler coordinate $\bm{r}$. We note that we need to pay attention to the conservation of the magnetization in a unit volume~\cite{Yamamoto_Maekawa_AnnPhys} yielding $\bm{M}(\bm{R})=\bm{M}(\bm{r})/\det(J(\bm{r}))$, where $J(\bm{r})$ is a Jacobian matrix (see Supplementary data~\cite{SM} for details). We get
+\begin{equation}
+    \nabla_{\bm{r}}\cdot\left(\bm{h}(\bm{r})+\bm{m}(\bm{r})\right)=\bm{M}_0\cdot\nabla_{\bm{r}}\left(\nabla_{\bm{r}}\cdot\bm{u}(\bm{r})\right),\label{eq:Maxwell_couple_div}
+\end{equation}
+\begin{equation}
+    \nabla_{\bm{r}}\times\bm{h}(\bm{r})=0,\label{eq:Maxwell_couple_rot}
+\end{equation}
+where $\nabla_{\bm{r}}$ stands for derivatives with respect to the $\bm{r}$ coordinate. Because the surface of the film is also distorted as in Fig.~\ref{fig:Schematic}, the boundary conditions used to solve these equations are also modified by the presence of $\bm{u}$ as
+\begin{equation}
+    h^{\mathrm{in}}_x-h_x^{\mathrm{out}}=0,\label{eq:Maxwell_bc_x}
+\end{equation}
+\begin{equation}
+    h^{\mathrm{in}}_z+m_z-h^{\mathrm{out}}_z=M_{0,x}\frac{\partial u_z}{\partial x},\label{eq:Maxwell_bc_z}
+\end{equation}
+at $z=\pm L/2$, where $h^{\mathrm{in}/\mathrm{out}}$ stand for the dipolar fields inside and outside the film, respectively. Hereafter, lower indices indicate components in the Euler coordinate. Following the Green tensor method as in Ref.~\cite{Kalinikos_Slavin_1986}, the dipolar field satisfying Eqs.~(\ref{eq:Maxwell_couple_div}) and (\ref{eq:Maxwell_couple_rot}) under the boundary conditions (\ref{eq:Maxwell_bc_x}) and (\ref{eq:Maxwell_bc_z}) is given as (see Supplementary data~\cite{SM} for details)
+\begin{equation}
+    \bm{h}(z)=\int_{-\frac{L}{2}}^{\frac{L}{2}}\rmd z'\left(G^m(z,z')\bm{m}(z')+G^u(z,z')\bm{u}(z')\right),\label{eq:dipolar_field}
+\end{equation}
+where
+\begin{equation}
+    G^m(z,z')=\left(\begin{array}{ccc}
+        -G_P(z,z')&0&-iG_Q(z,z')\\
+        0&0&0\\
+        -iG_Q(z,z')&0&G_{P'}(z,z')
+    \end{array}\right),
+\end{equation}
+\begin{equation*}
+    G^u(z,z')=-ikM_{0,x}G^m(z,z'),
+\end{equation*}
+\begin{equation}
+    G_{P}(z,z')=\frac{k}{2}e^{-k|z-z'|},
+\end{equation}
+\begin{equation}
+    G_{Q}(z,z')=\mathrm{sgn}(z-z')G_{P}(z,z'),
+\end{equation}
+\begin{equation}
+    G_{P'}(z,z')=G_{P}(z,z')-\delta(z-z').
+\end{equation}
+This dipolar field couples magnetostatic and elastic waves in the film. In the present setup, only elastic deformations in the $xz$ plane couple to the magnetization. In addition, the coupling vanishes when the equilibrium magnetization is parallel to the $y$ axis.
+
+Next, we examine the effect of magnetoelastic coupling on the dynamics of the magnetostatic and elastic waves. In the absence of this coupling, the dynamics of the magnetization $\bm{m}$ up to first order is described by the linearized Landau--Lifshitz equation
+\begin{equation}
+    \dot{\bm{m}}=-\gamma\mu_0\left(\bm{m}\times\bm{H}_0+\bm{M}_0\times\bm{h}\right),\label{eq:LandauLifshitz}
+\end{equation}
+where $\gamma$ is the gyromagnetic ratio and $\mu_0$ is the vacuum magnetic permeability. This equation can be derived from a Lagrangian
+\begin{equation*}
+    L^m[\bm{m},\dot{\bm{m}},\bm{m}^*,\dot{\bm{m}}^*]=\int\rmd z\Re\left[\frac{1}{4M_0^2\gamma}\bm{M}_0\cdot(\bm{m}\times\dot{\bm{m}}^*)\right.
+\end{equation*}
+\begin{equation}
+    \hspace{2.9cm}\left.-\frac{\mu_0}{4}\left(\bm{h}^*\cdot\bm{h}+\frac{H_0}{M_0}\bm{m}^*\cdot\bm{m}\right)\right],\label{eq:Lagrangian_m}
+\end{equation}
+where the asterisk denotes complex conjugate. We can verify this by constructing the Euler--Lagrange equation with respect to $\bm{m}^*$ from this Lagrangian. On the other hand, the dynamics of the displacement field $\bm{u}$ is described by the Navier--Cauchy equation
+\begin{equation}
+    \rho\ddot{\bm{u}}=\mu\nabla^2\bm{u}+\left(\mu+\lambda\right)\nabla\left(\nabla\cdot\bm{u}\right),\label{eq:NavierCauchy}
+\end{equation}
+where $\rho$ is the mass density, $\mu$ and $\lambda$ are Lam\'e constants. The Lagrangian for this equation is
+\begin{equation}
+    L^u[\bm{u},\dot{\bm{u}},\bm{u}^*,\dot{\bm{u}}^*]=\int\rmd z\Re\left[\frac{\rho}{4}\dot{\bm{u}}^*\cdot\dot{\bm{u}}+\frac{1}{4}\partial_i\sigma_{ij}u_j^*\right],\label{eq:Lagrangian_u}
+\end{equation}
+where $\sigma_{ij}=\mu(\partial_i u_j+\partial_j u_i)+\lambda\delta_{ij}\nabla\cdot\bm{u}$ is the stress tensor. The total Lagrangian of the coupled system is given by the sum of the two Lagrangians, Eqs.~(\ref{eq:Lagrangian_m}) and (\ref{eq:Lagrangian_u}). In this case, $\bm{h}$ is no longer only a functional of the magnetization, but also a functional of the displacement field $\bm{u}$. As a result, a magnetoelastic coupling term of the form
+\begin{equation}
+    L^{\mathrm{me}}
+    =
+    \frac{\mu_0 k}{2}
+    \int\mathrm{d}z'\mathrm{d}z''\,
+    \Im\left[
+    M_{0,x}\bm{m}^*(z')\cdot G^m(z',z'')\bm{u}(z'')
+    \right]
+\end{equation}
+arises from the $\bm{h}^*\cdot\bm{h}$ term in the Lagrangian. This term is analogous to the standard local magnetoelastic coupling density~\cite{Kittel1949,KittelAbrahams1953,Neel1954, CallenCallen1963}, while explicitly retaining the long-range character of the dipolar interaction. In addition, the elasticity tensor receives a magnetostatic contribution, and a new volume force term $-\bm{f}$ appears in the Navier--Cauchy equation~(\ref{eq:NavierCauchy}), where the force density $\bm{f}$ is given by (see Supplementary data~\cite{SM} for details of the derivation)
+\begin{equation}
+    f_i(z):=\mu_0\frac{\delta h^*_j}{\delta u^*_i}h_j=-ik\mu_0 M_{0,x}h_i(z).
+\end{equation}
+Physically, this force can be understood as a Maxwell stress acting on the magnetic dipoles, caused by the change in the dipolar field induced by the displacement field. The coupled dynamics of the magnetoelastic wave is then given by
+\begin{equation}
+    \left\{
+    \begin{array}{l}
+        \dot{\bm{m}}=-\gamma\mu_0\left(\bm{m}\times\bm{H}_0+\bm{M}_0\times\bm{h}\right)\\
+        \rho\ddot{\bm{u}}=\mu\nabla^2\bm{u}+\left(\mu+\lambda\right)\nabla\left(\nabla\cdot\bm{u}\right)-\bm{f}.
+    \end{array}\label{eq:CoupledEOM}
+    \right.
+\end{equation}
+
+
+\begin{figure*}[t]
+    \begin{center}
+        \DIFdelbeginFL %DIFDELCMD < \includegraphics[width=2 \columnwidth]{fig/Bands.pdf}
+%DIFDELCMD <         %%%
+\DIFdelendFL \DIFaddbeginFL \includegraphics[width=2 \columnwidth]{fig/Bands2.pdf}
+        \DIFaddendFL \caption{Dispersion curves of the coupled waves. Red and blue curves represent modes with $C_{2x}$ eigenvalues $+1$ and $-1$, respectively. Black curves represent magnetostatic modes that are not eigenstates of the $C_{2x}$ operator. Markers show the dispersion of the coupled waves obtained from numerical calculations. The external magnetic field is applied (a) parallel to the propagation direction, $\bm{H}_0 \parallel \bm{k}$ ($\varphi=0$), (b) at $\varphi=\pi/4$, and (c) perpendicular to the propagation direction, $\bm{H}_0 \perp \bm{k}$ ($\varphi=\pi/2$). Insets show magnified views of representative band crossings. In (a), $\varphi=0$, anticrossings appear between BVW and Lamb modes only when they have the same $C_{2x}$ eigenvalue (same color). When the $C_{2x}$ symmetry of the system is broken (b), both the magnetostatic surface mode and the BVW couple to Lamb modes. The bottom-center inset of panel (b) shows the hybridization between the lowest-frequency BVW mode and the first Lamb wave mode.}
+        \label{fig:Bands}
+    \end{center}
+\end{figure*}
+
+In order to examine the dynamical properties of the coupled waves described by the above equations of motion, we numerically calculate the dispersion relation in the following. Under the assumption~(\ref{eq:Assumption}), the time derivatives on the left-hand side of the equations become $-i\omega$. Since we consider a film in vacuum, we impose the stress-free condition at the surfaces $z=\pm L/2$ as
+\begin{equation}
+    \sigma_{xz}|_{z=\pm\frac{L}{2}}=\sigma_{yz}|_{z=\pm\frac{L}{2}}=\sigma_{zz}|_{z=\pm\frac{L}{2}}=0.\label{eq:BC_EW}
+\end{equation}
+Without the coupling, it is known that a type of elastic wave called a Lamb wave appears under these conditions. Since the system in equilibrium is symmetric with respect to the $z=0$ plane, the Lamb wave modes are either even or odd in $z$. For later convenience, we introduce the $C_{2x}$ symmetry operation. The system is invariant under $C_{2x}$, and the deformation vector $\bm{u}(z)$ is an eigenfunction of the corresponding operator: $C_{2x}\bm{u}(z)=\pm\bm{u}(z)$. Numerically, we need to solve the equations under the boundary conditions~(\ref{eq:BC_EW}). For example, the finite element method naturally incorporates these conditions.
+
+On the other hand, the magnetostatic waves without the coupling to elastic waves in this geometry were studied in detail by Damon and Eshbach~\cite{damoneshbachMagnetostaticModesFerromagnet1961}. They analytically showed that when the external magnetic field is parallel to the propagation direction of the wave ($\bm{H}_0\parallel\bm{k}$), the system has infinitely many bulk modes called backward volume waves (BVWs). When the magnetic field is in-plane but perpendicular to the propagation direction ($\bm{H}_0\perp\bm{k}$), a surface mode appears that is localized at one of the surfaces.
+
+For the calculation of the dispersion, it is convenient to introduce another coordinate system, where the original one $(x,y,z)$ is rotated around the $z$ axis so that one of the axes is parallel to the external magnetic field. Then, the component of $\bm{m}$ is zero along this direction since $\bm{M}_0\cdot\bm{m}=0$ from the constraint $|\bm{M}|=const.$
+
+Now we consider the coupled equations~(\ref{eq:CoupledEOM}). Using the finite element method, we discretize the equations in real space while satisfying the boundary conditions, which leads to a generalized eigenvalue problem for the eigenvalue $\omega$. By solving this problem, we obtain the dispersion curves shown in Fig.~\ref{fig:Bands}. The parameters are taken to be those of Yttrium-Iron-Garnet (YIG): $\rho=5.17\ \mathrm{g}/\mathrm{cm}^3$, $\mu=7.81\times10^{-8}\ \mathrm{kg}\cdot\mathrm{GHz}^2/\mathrm{m}$, $\lambda=10.94\times10^{-8}\ \mathrm{kg}\cdot\mathrm{GHz}^2/\mathrm{m}$~\cite{clarkElasticConstantsSingleCrystal1961}, \DIFdelbegin \DIFdel{$\gamma=29.8\ \mathrm{GHz}/\mathrm{T}$}\DIFdelend \DIFaddbegin \DIFadd{$\gamma/2\pi=29.8\ \mathrm{GHz}/\mathrm{T}$}\DIFaddend , and $\mu_0M_0=0.178$ T~\cite{AulockHandbookofferritematerials}. The vacuum permeability is $\mu_0=4\pi\times10^{11}\ \mathrm{T}^2\mathrm{m}/(\mathrm{kg}\cdot\mathrm{GHz}^2)$. We set the film thickness to $L=500$ nm and the external magnetic field to $\mu_0H_0=0.1$ T.
+
+We define the angle between the $x$ axis and the external magnetic field as $\varphi$ and write $\bm{H}_0=H_0(\cos\varphi,\sin\varphi,0)$. In Fig.~\ref{fig:Bands}(a), we plot the case $\varphi=0$. In this case, the system has a $C_{2x}$ rotation symmetry and thus, the modes of magnetostatic BVWs and Lamb waves can be labeled by their eigenvalues. States with $C_{2x}$ eigenvalue $-1$ are plotted as blue curves, while those with $+1$ as red curves. Curves with negative slopes are magnetostatic BVWs and positive ones are Lamb waves, respectively. The markers represent the dispersion of the coupled waves. The insets show magnified views of the band crossings between BVWs and Lamb waves. We observe that the magnetostatic and elastic waves cause anti-crossing and produce hybridization gaps \DIFdelbegin \DIFdel{of several }\DIFdelend \DIFaddbegin \DIFadd{on the order of $0.1$--$1$ }\DIFaddend MHz only when the two modes have the same $C_{2x}$ eigenvalues. Figure~\ref{fig:Bands}(b) shows the case $\varphi=\pi/4$. In this case, two types of magnetostatic modes coexist: BVWs and surface waves. The insets show magnified views of the band crossings between the magnetostatic and Lamb waves. Hybridization gaps at anti-crossings appear between all the modes as the system does not have any symmetries in this case. Finally, in Fig.~\ref{fig:Bands}(c), we plot the case $\varphi=\pi/2$. Here, a magnetostatic surface mode appears but does not couple to the Lamb waves. This is because $G^u=0,\bm{f}=\bm{0}$, so that Eq.~(\ref{eq:CoupledEOM}) reduces to two independent equations. The decoupling arises from the mirror symmetry with respect to the plane normal to the $y$ axis, under which the magnetostatic and Lamb waves are odd and even, respectively. This symmetry argument does not constrain the coupling to deformations along the $y$ direction. Nevertheless, Maxwell's equations~(\ref{eq:Maxwell_couple_div}) and (\ref{eq:Maxwell_couple_rot}) do not involve $u_y$ within the magnetostatic approximation and to linear order in $\bm{m}$ and $\bm{u}$. Therefore, in the present theory, magnetostatic and elastic waves are completely decoupled when $\varphi=\pi/2$.
+
+From the magnitude of the hybridization gaps, the effective coupling strength $g_{\mathrm{eff}}$ is estimated to be on the order of a few MHz. On the other hand, assuming a typical Gilbert damping parameter $\alpha \approx 10^{-4}$~\cite{YIGalpha_PRAppl}, a quality factor $Q \approx 10^3$, and operating frequencies $\omega$ in the GHz range, the corresponding magnon and phonon linewidths are estimated as $\gamma_m \sim \alpha \omega$ and $\kappa \sim \omega/Q$, respectively. Under these conditions, $g_{\mathrm{eff}}^2/(\gamma_m\kappa)\sim1$, suggesting that the system is close to the boundary of the strong-coupling regime~\cite{rodriguezClassicalQuantumDistinctions2016}. Therefore, the hybridization gaps are expected to be experimentally resolvable.
+
+To generate the same gap via magnetoelastic coupling for bulk transverse waves, the magnetoelastic coupling constant $b_2$ would need to be on the order of $10^4$ J/m$^3$~\cite{Hioki2022}, which is one order of magnitude smaller than the experimental value for YIG, $b_2 \sim 10^5$ J/m$^3$~\cite{Krysztofik2021}. This result indicates that the dipolar contribution to the magnetoelastic coupling is subdominant compared to other mechanisms in realistic systems.
+
+In conclusion, we have developed a theoretical description of magnetoelastic coupling mediated by magnetic dipolar interactions in ferromagnetic thin films. The dipolar field was derived from Maxwell's equations in the presence of elastic deformations, and the coupled equations of motion were obtained within the Lagrangian formalism. Numerical calculations were performed for a YIG thin film to obtain the dispersion relations of the coupled modes. We found anti-crossings due to mode hybridization, with gaps \DIFdelbegin \DIFdel{of several }\DIFdelend \DIFaddbegin \DIFadd{on the order of $0.1$--$1$ }\DIFaddend MHz in general. When the external in-plane magnetic field is parallel to the wave propagation, the system has $C_2$ symmetry, so only magnetostatic and elastic waves with the same $C_2$ symmetry eigenvalues can hybridize. When they are perpendicular, couplings do not occur. The formulation developed here provides a starting point for theoretical studies of dipolar-interaction-mediated magnetoelastic coupling in ferromagnetic thin films.
+
+\ack{H. Y. acknowledges support from Japan Society for the Promotion of Science (JSPS) KAKENHI Grant Number JP24KJ1109 and MEXT Initiative to Establish Next-generation Novel Integrated Circuits Centers (X-NICS) Grant Number JPJ011438. 
+M. F. acknowledges support from Japan Society for the Promotion of Science (JSPS) KAKENHI Grant Numbers JP23KJ0339 and JP24K16987, and JST PRESTO Grant Number JPMJPR25H8. 
+M. A. acknowledges support from Japan Society for the Promotion of Science (JSPS) KAKENHI Grant Number JP23H05463. 
+D. H. acknowledges support from Japan Society for the Promotion of Science (JSPS) KAKENHI Grant Numbers JP21H05020, JP24H02235, and JP23H05463. 
+K. Y. acknowledges support from Japan Society for the Promotion of Science (JSPS) KAKENHI Grant Numbers JP24K00576 and JP25H00837 and from JSPS Bilateral Program Number JPJSBP120245708. 
+S. M. acknowledges support from Japan Society for the Promotion of Science (JSPS) KAKENHI Grant Numbers JP22K18687, JP22H00108, JP24H02230, and JP24H02231.}
+
+\bibliographystyle{iopart-num.bst}
+\bibliography{Ref_MSEW.bib}
+
+\end{document}
